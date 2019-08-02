@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Admin Dashboard UI Kit - Form Elements</title>
+    <title>Pages - Admin Dashboard UI Kit - Image Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -21,13 +21,11 @@
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/codrops-dialogFx/dialog.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/codrops-dialogFx/dialog-sandra.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/jquery-nouislider/jquery.nouislider.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 9]>
@@ -36,9 +34,9 @@
   </head>
   <body class="fixed-header ">
     <!-- BEGIN SIDEBPANEL-->
-    <nav class="page-sidebar" data-pages="sidebar">
+    <!-- <nav class="page-sidebar" data-pages="sidebar"> -->
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
-      <div class="sidebar-overlay-slide from-top" id="appMenu">
+      <!-- <div class="sidebar-overlay-slide from-top" id="appMenu">
         <div class="row">
           <div class="col-xs-6 no-padding">
             <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
@@ -59,10 +57,10 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
-      <div class="sidebar-header">
+      <!-- <div class="sidebar-header">
         <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
         <div class="sidebar-header-controls">
           <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
@@ -70,12 +68,12 @@
           <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
           </button>
         </div>
-      </div>
+      </div> -->
       <!-- END SIDEBAR MENU HEADER-->
       <!-- START SIDEBAR MENU -->
-      <div class="sidebar-menu">
+      <!-- <div class="sidebar-menu"> -->
         <!-- BEGIN SIDEBAR MENU ITEMS-->
-        <ul class="menu-items">
+        <!-- <ul class="menu-items">
           <li class="m-t-30 ">
             <a href="index.html" class="detailed">
               <span class="title">Dashboard</span>
@@ -216,10 +214,10 @@
               </li>
             </ul>
           </li>
-          <li class="open active">
+          <li>
             <a href="javascript:;">
               <span class="title">Forms</span>
-              <span class=" open  arrow"></span>
+              <span class=" arrow"></span>
             </a>
             <span class="icon-thumbnail"><i class="pg-form"></i></span>
             <ul class="sub-menu">
@@ -283,9 +281,9 @@
             <a href="charts.html"><span class="title">Charts</span></a>
             <span class="icon-thumbnail"><i class="pg-charts"></i></span>
           </li>
-          <li>
+          <li class="open active">
             <a href="javascript:;"><span class="title">Extra</span>
-            <span class=" arrow"></span></a>
+            <span class=" open  arrow"></span></a>
             <span class="icon-thumbnail"><i class="pg-bag"></i></span>
             <ul class="sub-menu">
               <li class="">
@@ -362,7 +360,7 @@
           </li>
         </ul>
         <div class="clearfix"></div>
-      </div>
+      </div> -->
       <!-- END SIDEBAR MENU -->
     </nav>
     <!-- END SIDEBAR -->
@@ -409,21 +407,21 @@
             </div>
             <!-- START NOTIFICATION LIST -->
             <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
-              <li class="p-r-15 inline">
-                <div class="dropdown">
+              <!-- <li class="p-r-15 inline"> -->
+                <!-- <div class="dropdown">
                   <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
                     <span class="bubble"></span>
-                  </a>
+                  </a> -->
                   <!-- START Notification Dropdown -->
-                  <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
+                  <!-- <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center"> -->
                     <!-- START Notification -->
-                    <div class="notification-panel">
+                    <!-- <div class="notification-panel"> -->
                       <!-- START Notification Body-->
-                      <div class="notification-body scrollable">
+                      <!-- <div class="notification-body scrollable"> -->
                         <!-- START Notification Item-->
-                        <div class="notification-item unread clearfix">
+                        <!-- <div class="notification-item unread clearfix"> -->
                           <!-- START Notification Item-->
-                          <div class="heading open">
+                          <!-- <div class="heading open">
                             <a href="#" class="text-complete pull-left">
                               <i class="pg-map fs-16 m-r-10"></i>
                               <span class="bold">Carrot Design</span>
@@ -447,52 +445,52 @@
                                 </p>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                           <!-- END Notification Item-->
                           <!-- START Notification Item Right Side-->
-                          <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                          <!-- <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
                             <a href="#" class="mark"></a>
-                          </div>
+                          </div> -->
                           <!-- END Notification Item Right Side-->
-                        </div>
+                        <!-- </div> -->
                         <!-- START Notification Body-->
                         <!-- START Notification Item-->
-                        <div class="notification-item  clearfix">
-                          <div class="heading">
+                        <!-- <div class="notification-item  clearfix"> -->
+                          <!-- <div class="heading">
                             <a href="#" class="text-danger pull-left">
                               <i class="fa fa-exclamation-triangle m-r-10"></i>
                               <span class="bold">98% Server Load</span>
                               <span class="fs-12 m-l-10">Take Action</span>
                             </a>
                             <span class="pull-right time">2 mins ago</span>
-                          </div>
+                          </div> -->
                           <!-- START Notification Item Right Side-->
-                          <div class="option">
+                          <!-- <div class="option">
                             <a href="#" class="mark"></a>
-                          </div>
+                          </div> -->
                           <!-- END Notification Item Right Side-->
-                        </div>
+                        <!-- </div> -->
                         <!-- END Notification Item-->
                         <!-- START Notification Item-->
-                        <div class="notification-item  clearfix">
-                          <div class="heading">
+                        <!-- <div class="notification-item  clearfix"> -->
+                          <!-- <div class="heading">
                             <a href="#" class="text-warning-dark pull-left">
                               <i class="fa fa-exclamation-triangle m-r-10"></i>
                               <span class="bold">Warning Notification</span>
                               <span class="fs-12 m-l-10">Buy Now</span>
                             </a>
                             <span class="pull-right time">yesterday</span>
-                          </div>
+                          </div> -->
                           <!-- START Notification Item Right Side-->
-                          <div class="option">
+                          <!-- <div class="option">
                             <a href="#" class="mark"></a>
-                          </div>
+                          </div> -->
                           <!-- END Notification Item Right Side-->
-                        </div>
+                        <!-- </div> -->
                         <!-- END Notification Item-->
                         <!-- START Notification Item-->
-                        <div class="notification-item unread clearfix">
-                          <div class="heading">
+                        <!-- <div class="notification-item unread clearfix"> -->
+                          <!-- <div class="heading">
                             <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
                               <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
                             </div>
@@ -501,58 +499,62 @@
                               <span class="fs-12 m-l-10">Owners</span>
                             </a>
                             <span class="pull-right time">11:00pm</span>
-                          </div>
+                          </div> -->
                           <!-- START Notification Item Right Side-->
-                          <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                          <!-- <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
                             <a href="#" class="mark"></a>
-                          </div>
+                          </div> -->
                           <!-- END Notification Item Right Side-->
-                        </div>
+                        <!-- </div> -->
                         <!-- END Notification Item-->
-                      </div>
+                      <!-- </div> -->
                       <!-- END Notification Body-->
                       <!-- START Notification Footer-->
-                      <div class="notification-footer text-center">
+                      <!-- <div class="notification-footer text-center">
                         <a href="#" class="">Read all notifications</a>
                         <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
                           <i class="pg-refresh_new"></i>
                         </a>
-                      </div>
+                      </div> -->
                       <!-- START Notification Footer-->
-                    </div>
+                    <!-- </div> -->
                     <!-- END Notification -->
-                  </div>
+                  <!-- </div> -->
                   <!-- END Notification Dropdown -->
-                </div>
-              </li>
+                <!-- </div> -->
+              <!-- </li>
               <li class="p-r-15 inline">
                 <a href="#" class="icon-set clip "></a>
               </li>
               <li class="p-r-15 inline">
                 <a href="#" class="icon-set grid-box"></a>
-              </li>
+              </li> -->
             </ul>
             <!-- END NOTIFICATIONS LIST -->
-            <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> </div>
+            <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> 
+          </div>
         </div>
-        <div class=" pull-right">
+        <!-- <div class=" pull-right">
           <div class="header-inner">
             <a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a>
           </div>
-        </div>
+        </div> -->
         <div class=" pull-right">
           <!-- START User Info-->
           <div class="visible-lg visible-md m-t-10">
+          <button type="button" class="btn btn-primary btn-cons btn-animated from-top fa fa-unlock" onclick="window.location.href='index.php';">
+                <span>Login</span>
+            </button>
             <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-              <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+              <!-- <span class="semi-bold">David</span> <span class="text-master">Nest</span> -->
             </div>
             <div class="dropdown pull-right">
-              <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="thumbnail-wrapper d32 circular inline m-t-5">
                 <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
             </span>
-              </button>
-              <ul class="dropdown-menu profile-dropdown" role="menu">
+              </button> -->
+              <!-- <ul class="dropdown-menu profile-dropdown" role="menu">
                 <li><a href="#"><i class="pg-settings_small"></i> Settings</a>
                 </li>
                 <li><a href="#"><i class="pg-outdent"></i> Feedback</a>
@@ -565,7 +567,7 @@
                     <span class="pull-right"><i class="pg-power"></i></span>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <!-- END User Info-->
@@ -576,856 +578,473 @@
       <div class="page-content-wrapper ">
         <!-- START PAGE CONTENT -->
         <div class="content ">
-          <!-- START JUMBOTRON -->
-          <div class="jumbotron" data-pages="parallax">
-            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
-              <div class="inner">
-                <!-- START BREADCRUMB -->
-                <ul class="breadcrumb">
+          <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+
+            <!-- START CATEGORY -->
+            <h1 class="m-b-5"><span class="semi-bold result-name">Polokwane </span>deals</h1>
+            <div class="gallery">
+              <div class="gallery-filters p-t-20 p-b-10">
+            <h1 class="m-b-5"><span class="semi-bold result-name">Trending deals in </span>Polokwane</h1><br>
+                <!-- <ul class="list-inline text-right">
+                  <li class="hint-text">Sort by: </li>
+                  <li><a href="#" class="active text-master p-r-5 p-l-5">Name</a></li>
+                  <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Views</a></li>
+                  <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Cost</a></li>
                   <li>
-                    <a href="#">Forms</a>
+                    <button class="btn btn-primary m-l-10" data-toggle="filters">More filters</button>
                   </li>
-                  <li><a href="#" class="active">Form Elements</a>
+                </ul> -->
+              </div>
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+              <!-- <div class="gallery-item first" data-width="1" data-height="1"> -->
+                <!-- START PREVIEW -->
+                <!-- <img src="assets/img/gallery/1.jpg" alt="" class="image-responsive-height"> -->
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <!-- <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
+                        <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              <!-- </div> -->
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+              <div class="gallery-item " data-width="2" data-height="2">
+                <!-- START PREVIEW -->
+                <div class="live-tile slide" data-speed="750" data-delay="4000" data-mode="carousel">
+                  <div class="slide-front">
+                    <img src="assets/img/gallery/2_1.jpg" alt="" class="image-responsive-height">
+                  </div>
+                  <div class="slide-back">
+                    <img src="assets/img/gallery/2_2.jpg" alt="" class="image-responsive-height">
+                  </div>
+                </div>
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info more-content">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <h3 class="pull-left bold text-white no-margin">Happy Ninja</h3>
+                        <h3 class="pull-right semi-bold text-white font-montserrat bold no-margin">$25.00</h3>
+                        <div class="clearfix"></div>
+                        <span class="hint-text pull-left text-white">Hand and mind crafted</span>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="">
+                        <h5 class="text-white light">Most Sold Item in the marketplace</h5>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+                <div class="gallery-item " data-width="1" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
+                        <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+                <div class="gallery-item " data-width="1" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
+                        <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+              <div class="gallery-item " data-width="1" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
+                        <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <!-- 
+                    FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN 
+                    FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT 
+                -->
+                <div class="gallery-item " data-width="1" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+                <!-- START ITEM OVERLAY DESCRIPTION -->
+                <div class="overlayer bottom-left full-width">
+                  <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                      <div class="">
+                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
+                        <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="m-t-10">
+                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                          <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                        </div>
+                        <div class="inline m-l-10">
+                          <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
+                          <p class="rating">
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star rated"></i>
+                            <i class="fa fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="pull-right m-t-10">
+                          <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END PRODUCT OVERLAY DESCRIPTION -->
+              </div>
+              <!-- END GALLERY ITEM -->
+            </div>
+            <!-- END CATEGORY -->
+          </div>
+          <!-- START CATEGORY -->
+          <div class="gallery">
+              <div class="gallery-filters p-t-20 p-b-10">
+              <h1 class="m-b-5"><span class="semi-bold result-name">Categories</span></h1>
+                <!-- <ul class="list-inline text-right">
+                  <li class="hint-text">Sort by: </li>
+                  <li><a href="#" class="active text-master p-r-5 p-l-5">Name</a></li>
+                  <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Views</a></li>
+                  <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Cost</a></li>
+                  <li>
+                    <button class="btn btn-primary m-l-10" data-toggle="filters">More filters</button>
                   </li>
-                </ul>
-                <!-- END BREADCRUMB -->
-                <div class="row">
-                  <div class="col-lg-7 col-md-6 ">
-                    <!-- START PANEL -->
-                    <div class="panel panel-default">
-                      <div class="panel-body text-center">
-                        <img class="image-responsive-height demo-mw-600" src="assets/img/demo/form_hero.gif" alt="">
-                      </div>
-                    </div>
-                    <!-- END PANEL -->
-                  </div>
-                  <div class="col-lg-5 col-md-6 ">
-                    <!-- START PANEL -->
-                    <div class="panel panel-transparent">
-                      <div class="panel-heading">
-                        <div class="panel-title">Getting started
-                        </div>
-                      </div>
-                      <div class="panel-body">
-                        <h3>One of the most underestimated elements of design is typography. However, it’s
-									critical in both print and web media. We Made it Perfect in both.</h3>
-                        <br>
-                        <div>
-                          <div class="profile-img-wrapper m-t-5 inline">
-                            <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
-                            <div class="chat-status available">
-                            </div>
-                          </div>
-                          <div class="inline m-l-10">
-                            <p class="small hint-text m-t-5">VIA senior product manage
-                              <br> for UI/UX at REVOX</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- END PANEL -->
+                </ul> -->
+              </div>
+              <!-- START GALLERY ITEM -->
+              <div class="gallery-item " data-width="2" data-height="1">
+                <!-- START PREVIEW -->
+                <div class="live-tile slide" data-speed="750" data-delay="4000" data-mode="carousel">
+                  <div class="slide-front">
+                    <img src="assets/img/gallery/2_1.jpg" alt="" class="image-responsive-height">
                   </div>
                 </div>
+                <!-- END PREVIEW -->
               </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+                <div class="gallery-item " data-width="2" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <div class="gallery-item " data-width="2" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+              </div>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+                <div class="gallery-item " data-width="2" data-height="1">
+                <!-- START PREVIEW -->
+                <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                <!-- END PREVIEW -->
+              </div>
+              <!-- END GALLERY ITEM -->
             </div>
-          </div>
-          <!-- END JUMBOTRON -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option #one
+            <!-- END CATEGORY -->
+          <!-- START DIALOG -->
+          <div id="itemDetails" class="dialog item-details">
+            <div class="dialog__overlay"></div>
+            <div class="dialog__content">
+              <div class="container-fluid">
+                <div class="row dialog__overview">
+                  <div class="col-sm-7 no-padding item-slideshow-wrapper full-height">
+                    <div class="item-slideshow full-height">
+                      <div class="slide" data-image="assets/img/gallery/item-square.jpg">
+                      </div>
+                      <div class="slide" data-image="assets/img/gallery/item-square.jpg">
+                      </div>
                     </div>
                   </div>
-                  <div class="panel-body">
-                    <h5>
-							Pages default style
-						</h5>
-                    <form class="" role="form">
-                      <div class="form-group form-group-default required ">
-                        <label>Project</label>
-                        <input type="email" class="form-control" required>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="form-group form-group-default required">
-                            <label>First name</label>
-                            <input type="text" class="form-control" required>
+                  <div class="col-sm-12 visible-xs bg-info-dark">
+                    <div class="container-xs-height">
+                      <div class="row row-xs-height">
+                        <div class="col-xs-8 col-xs-height col-middle no-padding">
+                          <div class="thumbnail-wrapper d32 circular inline">
+                            <img width="32" height="32" src="assets/img/profiles/2.jpg" data-src="assets/img/profiles/2.jpg" data-src-retina="assets/img/profiles/2x.jpg" alt="">
+                          </div>
+                          <div class="inline m-l-15">
+                            <p class="text-white no-margin">Alex Nester</p>
+                            <p class="hint-text text-white no-margin fs-12">Senior UI/UX designer</p>
                           </div>
                         </div>
-                        <div class="col-sm-6">
-                          <div class="form-group form-group-default">
-                            <label>Last name</label>
-                            <input type="text" class="form-control">
-                          </div>
+                        <div class="col-xs-4 col-xs-height col-middle text-right  no-padding">
+                          <h2 class="bold text-white price font-montserrat">$20.00</h2>
                         </div>
                       </div>
-                      <div class="form-group form-group-default required">
-                        <label>Password</label>
-                        <input type="password" class="form-control" required>
-                      </div>
-                      <div class="form-group  form-group-default required">
-                        <label>Placeholder</label>
-                        <input type="email" class="form-control" placeholder="ex: some@example.com" required>
-                      </div>
-                      <div class="form-group form-group-default disabled">
-                        <label>Disabled</label>
-                        <input type="email" class="form-control" value="You can put anything here" disabled>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
-              <div class="col-md-6">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option #two
                     </div>
                   </div>
-                  <div class="panel-body">
-                    <h5>
-							Traditional Standard Style
-						</h5>
-                    <form role="form">
-                      <div class="form-group">
-                        <label>Your name</label>
-                        <span class="help">e.g. "Mona Lisa Portrait"</span>
-                        <input type="email" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <label>Password</label>
-                        <span class="help">e.g. "Mona Lisa Portrait"</span>
-                        <input type="password" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <label>Email</label>
-                        <span class="help">e.g. "some@example.com"</span>
-                        <input type="email" class="form-control" placeholder="ex: some@example.com" required>
-                      </div>
-                      <div class="form-group">
-                        <label>Placeholder</label>
-                        <span class="help">e.g. "some@example.com"</span>
-                        <input type="email" class="form-control" placeholder="ex: some@example.com" required>
-                      </div>
-                      <div class="form-group">
-                        <label>Disabled</label>
-                        <span class="help">e.g. "some@example.com"</span>
-                        <input type="email" class="form-control" value="You can put anything here" disabled>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
-            </div>
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <div class="row">
-              <div class="col-md-4">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">Form Options
-                    </div>
-                    <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>Form
-							<span class="semi-bold">Controls</span>
-						</h5>
-                    <p>Adding on top of existing browser controls, Bootstrap includes other useful form components. Add text or buttons before or after any text-based input. Do note that select elements are not supported here.</p>
-                    <br>
-                    <div class="input-group transparent">
-                      <span class="input-group-addon">
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                      <input type="text" placeholder="Username" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <span class="input-group-addon primary">
-                                
-                                <i class="fa fa-align-justify"></i>
-                            </span>
-                      <input type="text" placeholder="Username" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <input type="text" class="form-control">
-                      <span class="input-group-addon primary">
-                                
-                                <i class="fa fa-align-justify"></i> 
-                            </span>
-                    </div>
-                    <br>
-                    <form role="form">
-                      <div class="form-group form-group-default input-group">
-                        <label>Project</label>
-                        <input type="email" class="form-control">
-                        <span class="input-group-addon">
-                                           Pages
-                                        </span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
-              <div class="col-md-8">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">Size options
-                    </div>
-                    <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h5>Pages default control sizes
-								</h5>
-                        <p>Input form element sizes on defualt pages design, These are highly customizable. You can either chose the default or you can select Standard input elements</p>
-                        <form role="form">
-                          <div class="form-group form-group-default">
-                            <label class="label-lg">Large</label>
-                            <input type="text" placeholder=".input-lg" class="form-control input-lg">
-                          </div>
-                          <div class="form-group form-group-default">
-                            <label>Medium</label>
-                            <input type="text" placeholder="Default input" class="form-control">
-                          </div>
-                          <div class="form-group form-group-default">
-                            <label class="label-sm">Small</label>
-                            <input type="text" placeholder=".input-sm" class="form-control input-sm">
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-sm-6">
-                        <h5>Standard control sizes
-								</h5>
-                        <form role="form">
-                          <div class="form-group m-b-10">
-                            <input type="text" placeholder=".input-lg" class="form-control input-lg">
-                          </div>
-                          <div class="form-group m-b-10">
-                            <input type="text" placeholder="Default input" class="form-control">
-                          </div>
-                          <div class="form-group m-b-10">
-                            <input type="text" placeholder=".input-sm" class="form-control input-sm">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
-            </div>
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Checkbox controls
-                </div>
-                <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h5>Color
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Our very own image-less pure CSS and retina compatible check box. These check boxes are customized and aviable in all boostrap color classes</p>
-                    <br>
-                    <div class="checkbox ">
-                      <input type="checkbox" value="1" id="checkbox1">
-                      <label for="checkbox1">Keep Me Signed in</label>
-                    </div>
-                    <div class="checkbox check-success  ">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox2">
-                      <label for="checkbox2">I agree</label>
-                    </div>
-                    <div class="checkbox check-primary">
-                      <input type="checkbox" value="1" id="checkbox3">
-                      <label for="checkbox3">Mark</label>
-                    </div>
-                    <div class="checkbox check-info">
-                      <input type="checkbox" value="1" id="checkbox4">
-                      <label for="checkbox4">Steve Jobs</label>
-                    </div>
-                    <div class="checkbox check-warning">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox5">
-                      <label for="checkbox5">Action</label>
-                    </div>
-                    <div class="checkbox check-danger">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox6">
-                      <label for="checkbox6">Mark as read</label>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h5>Shape
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Bored with traditional boxed shape check boxes? Here is a circle one simply add the class
-                      <code>.checkbox-circle</code>to change it</p>
-                    <br>
-                    <div class="checkbox  checkbox-circle">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox7">
-                      <label for="checkbox7">Keep Me Signed in</label>
-                    </div>
-                    <div class="checkbox check-success checkbox-circle">
-                      <input type="checkbox" value="1" id="checkbox8">
-                      <label for="checkbox8">I agree</label>
-                    </div>
-                    <div class="checkbox check-primary checkbox-circle">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox9">
-                      <label for="checkbox9">Mark</label>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h5>State
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>These act the same way as normal HTML check boxes. Here are some states that</p>
-                    <br>
-                    <div class="checkbox check-success">
-                      <input type="checkbox" disabled="disabled" value="check1" name="check" id="check1">
-                      <label for="check1">Checkbox No. 1</label>
-                      <br>
-                      <input type="checkbox" disabled="disabled" checked="checked" value="check2" name="check" id="check2">
-                      <label for="check2">Checkbox No. 2</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Toggle controls
-                </div>
-                <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h5>Color
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Pure CSS radio button with a cool animation. These are available in all primary colors in bootstrap
+                  <div class="col-sm-5 p-r-35 p-t-35 p-l-35 full-height item-description">
+                    <h2 class="semi-bold no-margin font-montserrat">Happy Ninja</h2>
+                    <p class="rating fs-12 m-t-5">
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star "></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
                     </p>
-                    <br>
-                    <div class="radio radio-success">
-                      <input type="radio" value="yes" name="optionyes" id="yes">
-                      <label for="yes">Agree</label>
-                      <input type="radio" checked="checked" value="no" name="optionyes" id="no">
-                      <label for="no">Disagree</label>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h5>State
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Use of different color opacity helps to destigues between different states such as disable
+                    <p class="fs-13">When it comes to digital design, the lines between functionality, aesthetics, and psychology are inseparably blurred. Without the constraints of the physical world, there’s no natural form to fall back on, and every bit of constraint and affordance must be introduced intentionally. Good design makes a product useful.
                     </p>
-                    <br>
-                    <div class="radio radio-primary">
-                      <input type="radio" disabled="disabled" value="Disabled" name="Disabled" id="Disabled">
-                      <label for="Disabled">Disabled</label>
-                      <input type="radio" disabled="disabled" checked="checked" value="ADisabled" name="ADisabled" id="ADisabled">
-                      <label for="ADisabled">Disabled</label>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h5>Slide
-							<span class="semi-bold">Toggle</span>
-						</h5>
-                    <p>A cool iOS7 slide toggle. These are cutomize for all boostrap colors</p>
-                    <br>
-                    <div class="col-sm-6">
-                      <input type="checkbox" data-init-plugin="switchery" checked="checked" disabled="disabled" />
-                      <input type="checkbox" data-init-plugin="switchery" checked="checked" />
-                    </div>
-                    <div class="col-sm-6">
-                      <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
-                      <input type="checkbox" data-init-plugin="switchery" data-size="large" data-color="primary" checked="checked" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Dropdown Controls
-                </div>
-                <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <p>We've simplified our dropdown buttons by getting rid of the dedicated dropdown associated with them, this looks more clean and also available in all different colors</p>
-                    <br>
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="sightseeing">Web-safe</option>
-                      <option value="business">Helvetica</option>
-                      <option value="honeymoon">SegeoUI</option>
-                    </select>
-                    <br>
-                    <br>
-                    <p class="small">The button will be automatically sized according to the visible content size. Make sure there is enough room for the hidden content to show</p>
-                  </div>
-                  <div class="col-sm-4">
-                    <h5>
-							Simple dropdowns
-						</h5>
-                    <p>These are highly customizable dropdowns that come with search option for use to search</p>
-                    <form role="form">
-                      <div class="form-group ">
-                        <select class="full-width" data-init-plugin="select2">
-                          <optgroup label="Alaskan/Hawaiian Time Zone">
-                            <option value="AK">Alaska</option>
-                            <option value="HI">Hawaii</option>
-                          </optgroup>
-                          <optgroup label="Pacific Time Zone">
-                            <option value="CA">California</option>
-                            <option value="NV">Nevada</option>
-                            <option value="OR">Oregon</option>
-                            <option value="WA">Washington</option>
-                          </optgroup>
-                          <optgroup label="Mountain Time Zone">
-                            <option value="AZ">Arizona</option>
-                            <option value="CO">Colorado</option>
-                            <option value="ID">Idaho</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="UT">Utah</option>
-                            <option value="WY">Wyoming</option>
-                          </optgroup>
-                          <optgroup label="Central Time Zone">
-                            <option value="AL">Alabama</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TX">Texas</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="WI">Wisconsin</option>
-                          </optgroup>
-                          <optgroup label="Eastern Time Zone">
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="IN">Indiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="OH">Ohio</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WV">West Virginia</option>
-                          </optgroup>
-                        </select>
+                    <div class="row m-b-20 m-t-20">
+                      <div class="col-xs-6"><span class="font-montserrat all-caps fs-11">Price ranges</span>
                       </div>
-                    </form>
-                    <form class="m-t-10" role="form">
-                      <div class="form-group form-group-default form-group-default-select2 required">
-                        <label class="">Project</label>
-                        <select class="full-width" data-placeholder="Select Country" data-init-plugin="select2">
-                          <optgroup label="Alaskan/Hawaiian Time Zone">
-                            <option value="AK">Alaska</option>
-                            <option value="HI">Hawaii</option>
-                          </optgroup>
-                          <optgroup label="Pacific Time Zone">
-                            <option value="CA">California</option>
-                            <option value="NV">Nevada</option>
-                            <option value="OR">Oregon</option>
-                            <option value="WA">Washington</option>
-                          </optgroup>
-                        </select>
+                      <div class="col-xs-6 text-right">$20.00 - $40.00</div>
+                    </div>
+                    <div class="row m-t-20 m-b-10">
+                      <div class="col-xs-6"><span class="font-montserrat all-caps fs-11">Paint sizes</span>
                       </div>
-                    </form>
-                  </div>
-                  <div class="col-sm-4">
-                    <h5>
-							Multi select
-						</h5>
-                    <p>Fancy multiselect option box. Customized for the anypreference</p>
+                    </div>
+                    <button class="btn btn-white">S</button>
+                    <button class="btn btn-white">M</button>
+                    <button class="btn btn-white">L</button>
+                    <button class="btn btn-white">XL</button>
                     <br>
-                    <select id="multi" class="full-width" multiple>
-                      <option value="Jim">Jim</option>
-                      <option value="John">John</option>
-                      <option value="Lucy">Lucy</option>
-                    </select>
-                    <form class="m-t-10" role="form">
-                      <div class="form-group form-group-default form-group-default-select2">
-                        <label>Project</label>
-                        <select class=" full-width" data-init-plugin="select2" multiple>
-                          <option value="Jim">Jim</option>
-                          <option value="John">John</option>
-                          <option value="Lucy">Lucy</option>
-                        </select>
-                      </div>
-                    </form>
+                    <button class="btn btn-primary buy-now">Buy Now</button>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Typehead
-                </div>
-                <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <p>You the following input will give suggestion as you type, you can fetch your list from an external data source.</p>
-                    <br>
-                    <div class="form-group">
-                      <input class="typeahead form-control sample-typehead" type="text" placeholder="States of USA">
-                    </div>
-                    <br>
-                    <br>
-                    <p class="small">A useful feature in this typehead is autofill as you type</p>
-                  </div>
-                  <div class="col-sm-4">
-                    <h5>
-							Supporting Different Styles
-						</h5>
-                    <p>Supports both attached form layouts and also traditional input text fields</p>
-                    <div class="form-group">
-                      <input class="typeahead form-control sample-typehead" type="text" placeholder="States of USA">
-                    </div>
-                    <form class="" role="form">
-                      <div class="form-group form-group-default required typehead" id="sample-three">
-                        <label>Countries</label>
-                        <input class="typeahead form-control sample-typehead" type="text" placeholder="States of USA">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-sm-4">
-                    <h5>
-							Advance Options
-						</h5>
-                    <p>Want to customize how the data is display, you can do that too with tyephead custom templates</p>
-                    <br>
-                    <div class="form-group" id="custom-templates">
-                      <input class="typeahead form-control" type="text" placeholder="Oscar winners for Best Picture">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Date Controls
-                </div>
-                <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h5>Simple Date
-							<span class="semi-bold">Picker</span>
-						</h5>
-                    <p>Date picker is powered by boostrap date picker, this is customized in way that it suites our theme and design, Have a look!</p>
-                    <br>
-                    <div id="datepicker-component" class="input-group date col-sm-8">
-                      <input type="text" class="form-control"><span class="input-group-addon"><i
-								class="fa fa-calendar"></i></span>
-                    </div>
-                    <br>
-                    <div class="form-group form-group-default input-group col-sm-10">
-                      <label>Check In</label>
-                      <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
-                      <span class="input-group-addon">
-                                          <i class="fa fa-calendar"></i>
-                                        </span>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <h5>Date <span class="semi-bold">Range</span></h5>
-                    <p>Date range can be set by the same plugin, this is use full when taking two dates at a time
-                    </p>
-                    <br>
-                    <div class="input-daterange input-group" id="datepicker-range">
-                      <input type="text" class="input-sm form-control" name="start" />
-                      <span class="input-group-addon">to</span>
-                      <input type="text" class="input-sm form-control" name="end" />
-                    </div>
-                    <br>
-                    <div class="input-prepend input-group">
-                      <span class="add-on input-group-addon"><i	class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
-                      <input type="text" style="width: 100%" name="reservation" id="daterangepicker" class="form-control" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM" />
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="input-group bootstrap-timepicker">
-                          <input id="timepicker" type="text" class="form-control">
-                          <span class="input-group-addon"><i class="pg-clock"></i></span>
+                <div class="row dialog__footer bg-info-dark hidden-xs">
+                  <div class="col-sm-7 full-height separator">
+                    <div class="container-xs-height">
+                      <div class="row row-xs-height">
+                        <div class="col-xs-7 col-xs-height col-middle no-padding">
+                          <div class="thumbnail-wrapper d48 circular inline">
+                            <img width="48" height="48" src="assets/img/profiles/2.jpg" data-src="assets/img/profiles/2.jpg" data-src-retina="assets/img/profiles/2x.jpg" alt="">
+                          </div>
+                          <div class="inline m-l-15">
+                            <p class="text-white no-margin">Alex Nester</p>
+                            <p class="hint-text text-white no-margin fs-12">Senior UI/UX designer</p>
+                          </div>
+                        </div>
+                        <div class="col-xs-5 col-xs-height col-middle text-right  no-padding">
+                          <h2 class="bold text-white price font-montserrat">$20.00</h2>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <h5>Advance
-							<span class="semi-bold">Settings</span>
-						</h5>
-                    <p>Some advance setting that you can do with this calender, like to start from years an disable sections of dates</p>
-                    <br>
-                    <div id="datepicker-embeded"></div>
+                  <div class="col-sm-5 full-height">
+                    <ul class="recommended list-inline pull-right m-t-10 m-b-0">
+                      <li>
+                        <a href="#"><img src="assets/img/gallery/thumb-1.jpg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/img/gallery/thumb-2.jpg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/img/gallery/thumb-3.jpg"></a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">Input helpers
-                </div>
-                <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h5>
-							Input masks
-						</h5>
-                    <p>These assure the user will never enter invalid phone no, email or anything that has a pattern even without validations</p>
-                    <br>
-                    <div class="form-group">
-                      <label>Date</label>
-                      <span class="help">e.g. "25/12/2013"</span>
-                      <input type="text" id="date" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Telephone</label>
-                      <span class="help">e.g. "(324) 234-3243"</span>
-                      <input type="text" id="phone" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Custom</label>
-                      <span class="help">e.g. "23-4324324"</span>
-                      <input type="text" id="tin" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Social Security Number</label>
-                      <span class="help">e.g. "432-43-2432"</span>
-                      <input type="text" id="ssn" class="form-control" placeholder="You can put anything here">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <h5>Input autonumeric
-						</h5>
-                    <p>Do you forget small things? here is something that helps to automatically placed forgotten dollar signs, decimal places and even comma separates and many more!</p>
-                    <br>
-                    <div class="form-group">
-                      <label>Decimal place and comma separator</label>
-                      <span class="help">e.g. "53,000.00"</span>
-                      <input type="text" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Weird way but works</label>
-                      <span class="help">e.g. "45.000,00"</span>
-                      <input type="text" data-a-dec="," data-a-sep="." class="autonumeric form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Dollar prefix</label>
-                      <span class="help">e.g. "$45.50"</span>
-                      <input type="text" data-a-sign="$ " class="autonumeric form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Range</label>
-                      <span class="help">e.g. "0 - 9,999"</span>
-                      <input type="text" data-v-min="0" data-v-max="9999" class="autonumeric form-control">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
-            <!-- START PANEL -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">WYSIWYG editors
-                </div>
-                <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
-                </div>
-              </div>
-              <div class="panel-body no-scroll ">
-                <h5>Summernote</h5>
-                <div class="summernote-wrapper">
-                  <div id="summernote">Hello Summernote</div>
-                </div>
-              </div>
-            </div>
-            <!-- END PANEL -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg m-t-20">
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">Tag Input
-                    </div>
-                    <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <p>Do you use tags to organize content on your site? This plugin will turn your boring tag list into a magical input that turns each tag into a style-able object with its own delete link.
-                    </p>
-                    <br>
-                    <input class="tagsinput custom-tag-input" type="text" value="Amsterdam,Washington" />
-                    <input class="tagsinput custom-tag-input" type="text" value="johnsmith@pages.io,janesmith@pages.io" />
-                    <div class="form-group form-group-default required ">
-                      <label>Tags</label>
-                      <input class="tagsinput custom-tag-input" type="text" value="hello World, quotes, inspiration" />
-                    </div>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
-              <div class="col-md-6">
-                <!-- START PANEL -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Drag n' drop uploader
-                    </div>
-                    <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
-                    </div>
-                  </div>
-                  <div class="panel-body no-scroll no-padding">
-                    <form action="/file-upload" class="dropzone no-margin">
-                      <div class="fallback">
-                        <input name="file" type="file" multiple/>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-              </div>
+              <button class="close action top-right" data-dialog-close><i class="pg-close fs-14"></i>
+              </button>
             </div>
           </div>
-          <!-- END CONTAINER FLUID -->
+          <!-- END DIALOG -->
+          <div class="quickview-wrapper" id="filters">
+            <div class="padding-40 ">
+              <a class="builder-close quickview-toggle pg-close" data-toggle="quickview" data-toggle-element="#filters" href="#"></a>
+              <form class="" role="form">
+                <h5 class="all-caps font-montserrat fs-12 m-b-20">Advance filters</h5>
+                <div class="form-group form-group-default ">
+                  <label>Project</label>
+                  <input type="email" class="form-control" placeholder="Type of select a label">
+                </div>
+                <h5 class="all-caps font-montserrat fs-12 m-b-20 m-t-25">Advance filters</h5>
+                <div class="radio radio-danger">
+                  <input type="radio" checked="checked" value="1" name="filter" id="asc">
+                  <label for="asc">Ascending order</label>
+                  <br>
+                  <input type="radio" value="2" name="filter" id="views">
+                  <label for="views">Most viewed</label>
+                  <br>
+                  <input type="radio" value="3" name="filter" id="cost">
+                  <label for="cost">Cost</label>
+                  <br>
+                  <input type="radio" value="4" name="filter" id="latest">
+                  <label for="latest">Latest</label>
+                </div>
+                <h5 class="all-caps font-montserrat fs-12 m-b-20 m-t-25">Price range</h5>
+                <div class="bg-danger m-b-10" id="slider-margin">
+                </div>
+                <button class="pull-right btn btn-danger btn-cons m-t-40">Apply</button>
+              </form>
+            </div>
+          </div>
         </div>
         <!-- END PAGE CONTENT -->
         <!-- START COPYRIGHT -->
@@ -2613,92 +2232,92 @@
             <div class="row">
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!-- <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
                     <div>
                       <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
                     </div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5">
                     <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
                     <p class="hint-text">via john smith</p>
                   </div>
-                </div>
+                </div> -->
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!-- <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
                     <div>T</div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5">
                     <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
                     <p class="hint-text">via pages</p>
                   </div>
-                </div>
+                </div> -->
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!-- <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
                     <div><i class="fa fa-headphones large-text "></i>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5">
                     <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
                     <p class="hint-text">via pagesmix</p>
                   </div>
-                </div>
+                </div> -->
                 <!-- END Search Result Item !-->
               </div>
-              <div class="col-md-6">
+              <!-- <div class="col-md-6"> -->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!-- <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
                     <div><i class="fa fa-facebook large-text "></i>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5">
                     <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
                     <p class="hint-text">via facebook</p>
-                  </div>
-                </div>
+                  </div> -->
+                <!-- </div> -->
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!-- <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
                     <div><i class="fa fa-twitter large-text "></i>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5">
                     <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
                     <p class="hint-text">via twitter</p>
-                  </div>
-                </div>
+                  </div> -->
+                <!-- </div> -->
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <!--  <div class=""> -->
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
+                  <!-- <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
                     <div><i class="fa fa-google-plus large-text "></i>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
+                  <!-- <div class="p-l-10 inline p-t-5"> 
                     <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
                     <p class="hint-text">via google plus</p>
                   </div>
-                </div>
+                </div> -->
                 <!-- END Search Result Item !-->
-              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -2722,27 +2341,19 @@
     <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
     <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
-    <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
-    <script src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/moment/moment.min.js"></script>
-    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
-    <script src="assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
-    <script src="assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
-    <script src="assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
+    <script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/plugins/jquery-isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/codrops-dialogFx/dialogFx.js" type="text/javascript"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-nouislider/jquery.nouislider.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-nouislider/jquery.liblink.js" type="text/javascript"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="pages/js/pages.min.js"></script>
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
-    <script src="assets/js/form_elements.js" type="text/javascript"></script>
+    <script src="assets/js/gallery.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
   </body>
