@@ -1,0 +1,1877 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	
+	<link rel="stylesheet" href="assets/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/prism.css" type="text/css" media="all">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'>
+</head>
+<body>
+	<div class="body-wrapper">
+		<!-- nav area -->
+		<div class="nav-wrapper">
+			<div class="logo-wrapper">
+				<h1 class="logo-title">Kaylilla - Clean & Minimalist Mobile Template</h1>
+			</div>
+			<div class="nav" id= "nav" >
+				<a class="smain-nav-item" href="#introduction"><i class="fa fa-gear"></i>Introduction</a>
+				<div class="nav-item"><a class="main-nav-item has-sub"><i class="fa fa-html5"></i>HTML Structure</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#navbar">Navbar</a>
+						<a class="sub-nav-item" href="#left-sidebar">Left Sidebar</a>
+						<a class="sub-nav-item" href="#content-container">Content</a>
+						<a class="sub-nav-item" href="#footer">Footer</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item has-sub"><i class="fa fa-file-text-o"></i>CSS</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#css-global">Global structure</a>
+						<a class="sub-nav-item" href="#icon-packs">Icon packs</a>
+						<a class="sub-nav-item" href="#helper-class">Helper class</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item has-sub"><i class="fa fa-code"></i>JS & Custom jQuery</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#fixed-navbar">Fixed navbar</a>
+						<a class="sub-nav-item" href="#slick-slider">Slick slider</a>
+						<a class="sub-nav-item" href="#portfolio">Portfolio</a>
+						<a class="sub-nav-item" href="#scroll-top">Scroll to top button</a>
+					</div>
+				</div>
+				<a class="smain-nav-item" href="#credits"><i class="fa fa-plug"></i>Credits</a>
+			</div>
+		</div> 
+		
+		<!-- content area -->
+		<div class="content-wrapper" id="content">
+			<div class="need-support"><a href="http://html.alfisahr.com/kaylilla/preview" target="_blank"><i class="fa fa-bullseye"></i>View demo</a> <a href="http://themeforest.net/user/alfisahr" target="_blank"><i class="fa fa-support"></i>Need Support</a></div>
+			
+			<!-- Getting start -->
+			<div class="content-section" id="introduction" style="display: block;">
+				<h3 class="page-title">Introduction</h3>
+				
+				<p>Thank you very much for choosing this template. We truly appreciate and really hope that you'll love our item.
+				</p>
+
+				<p>
+				Kaylilla - a mobile template designed with clean & minimalist concept. It comes with templates that we are often to use it, like blog and shop. Also, there are four home options ready. Typography adoption in-line with the concept, clean & minimalist, that make this template really beauty.
+				</p>
+				<h3 class="subtitle">Theme features</h3>
+				<ul>
+					<li>Designed for multipurposes</li>
+					<li>20+ HTML templates</li>
+					<li>Based on materialize front-end framework</li>
+					<li>Including 3 icon packs
+						<ul>
+							<li>Material Icon</li>
+							<li>FontAwesome</li>
+							<li>Themify</li>
+						</ul>
+					</li>
+					<li>Pages
+						<ul>
+							<li>404 not found</li>
+							<li>Contact</li>
+							<li>FAQ</li>
+							<li>Portfolio</li>
+							<li>Search result</li>
+						</ul>
+					</li>
+					<li>Apps
+						<ul>
+							<li>Login & Signup</li>
+							<li>Page tabs</li>
+							<li>Calendar</li>
+							<li>Chat</li>
+						</ul>
+					</li>
+					<li>Blogs
+						<ul>
+							<li>Standard listing</li>
+							<li>Small listing</li>
+							<li>Single (standard, video & gallery)</li>
+						</ul>
+					</li>
+					<li>Shop
+						<ul>
+							<li>Product listing</li>
+							<li>Product small listing</li>
+							<li>Product detail/inside</li>
+							<li>Cart</li>
+						</ul>
+					</li>
+					<li>Useful helper class</li>
+					<li>Responsive layout</li>
+				</ul>
+				<h3 class="subtitle">Need Support?</h3>
+				If you have any questions regarding to theme issues, send an email at <a href="mailto:support@alfisahr.com">support@alfisahr.com</a>
+			</div>
+			<div class="content-section" id="navbar" >
+				<h3 class="page-title">Navbar</h3> 
+				<p class="mb-4">Navbar is a fixed element act like a header. Its contain site title, main navigation and search navigation. There are two types navbar on this template, standard navbar and another one navbar that contain tabs.</p>
+				<div class="row">
+					<div class="col-12">
+						<strong>Standard navbar</strong> use class <strong><code>fixed-navbar</code></strong> on <code>page</code> (id) element, here the code.
+					</div>
+					<div class="col-6 mb-3">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;div id="page" class="fixed-navbar"&gt;
+	&lt;div class="top-navbar"&gt;
+		...
+	&lt;/div&gt;
+	...</code>
+</pre>
+					</div>
+					<div class="col-12">
+						<strong>Tabs navbar</strong> use class <strong><code>fixed-tabs</code></strong> on <code>page</code> (id) element, also its added <strong><code>with-tabs</code></strong> class inside <code>top-navbar</code> element, here the code.
+					</div>
+					<div class="col-6 mb-3">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;div id="page" class="fixed-tabs"&gt;
+	&lt;div class="top-navbar with-tabs"&gt;
+		...
+	&lt;/div&gt;
+	...</code>
+</pre>
+					</div>
+				</div>
+
+				<p>To control navbar behaviour when we scrolled down, you can do it through jquery <a href="#fixed-navbar">here</a>.</p>
+				<div class="row mb-5">
+					<div class="col-4">
+						<img src="assets/images/navbar1.jpg" alt="">
+					</div>
+					<div class="col-8">
+					
+					<pre style="max-height: 500px;">
+<code class="language-html">&lt;!-- FIXED Top Navbar --&gt;
+&lt;div class="top-navbar"&gt;
+			
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col s12"&gt;
+			
+				&lt;div class="front-navigation"&gt;
+					&lt;div class="top-navbar-left"&gt;
+						&lt;a href="#" data-target="slide-out-left" class="sidenav-trigger"&gt;
+							&lt;span class="ti-menu"&gt;&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="top-navbar-right"&gt;
+								
+						&lt;a href="#!" class="show-search"&gt;
+							&lt;span class="ti-search"&gt;&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="site-title"&gt;
+						&lt;h1&gt;&lt;span&gt;kay&lt;/span&gt;lilla&lt;/h1&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="searchbar"&gt;
+					&lt;div class="input-field"&gt;
+						&lt;input placeholder="Search..." id="first_name" type="text" class="validate"&gt;
+					&lt;/div&gt;
+					&lt;div class="search-close"&gt;
+						&lt;span class="ti-close"&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- End FIXED Top Navbar --&gt;
+</code>
+</pre>
+
+					</div>
+				</div>
+
+				
+			</div>
+			<div class="content-section" id="left-sidebar" >
+				<h3 class="page-title">Left sidebar</h3> 
+				<p>
+					You can put menus through this bar. There are two main elements you can set here. User profile identification and list of menu. Left sidebar is a hidden fixed element on the left where to show it, we need a trigger (button, navigation link). And here the element marked by.
+				</p>
+				<p>
+				<pre style="max-height: 150px;">
+<code class="language-html">&lt;div id="slide-out-left" class="sidenav"&gt;
+...
+&lt;/div&gt;</code>
+</pre>
+				</p>
+				<strong>Button trigger</strong></br>
+				<p>Button trigger used to show left sidebar / sidenav where by default is hidden. You can use button <code>&lt;btn ... </code> or navigation link <code>&lt;a ... </code>. Here the code.</p>
+				<p>
+				<pre style="max-height: 150px;">
+<code class="language-html">&lt;a href="#" data-target="slide-out-left" class="sidenav-trigger"&gt;
+...
+&lt;/a&gt;</code>
+</pre>
+				</p>
+				<p><strong>Nb:</strong> Attribute <code>data-target="slide-out-left"</code> refer to id attribute of sidenav / left sidebar element.</p>
+
+				<p>Here the complete view and codes left sidebar on the template.</p>
+				<div class="row">
+					<div class="col-4">
+						<img src="assets/images/left-sidebar.jpg" alt="">
+					</div>
+					<div class="col-8">
+					
+					<pre style="max-height: 500px;">
+<code class="language-html">&lt;!-- LEFT SIDEBAR --&gt;
+&lt;div id="slide-out-left" class="sidenav"&gt;		
+
+	&lt;div class="top-left-nav"&gt;
+		&lt;div class="profile-cover"&gt;
+			&lt;img src="assets/images/cody-davis-253928-unsplash.jpg" alt=""&gt;
+		&lt;/div&gt;
+		&lt;div class="profile-caption"&gt;
+			&lt;div class="pic-thumb"&gt;
+				&lt;img src="assets/images/profile-image-1.png" alt=""&gt;
+			&lt;/div&gt;&lt;!-- .pic-thumb --&gt;
+				&lt;a href="#" class="dropdown-trigger" data-target="sidedropdown"&gt;
+				&lt;span class="profile-name"&gt;Savo Milosevic&lt;/span&gt;
+				&lt;span class="desc"&gt;@savomilosevic&lt;/span&gt;
+				&lt;span class="icon"&gt;&lt;span class="ti-angle-down"&gt;&lt;/span&gt;&lt;/span&gt;
+			&lt;/a&gt;				
+			&lt;ul id="sidedropdown" class="dropdown-content"&gt;
+				&lt;li&gt;&lt;a href="panel-account.html"&gt;&lt;i class="material-icons"&gt;mail_outline&lt;/i&gt; Inbox&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="form-account.html"&gt;&lt;i class="material-icons"&gt;star_border&lt;/i&gt; Starred&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="order-history.html"&gt;&lt;i class="material-icons"&gt;history&lt;/i&gt; History&lt;/a&gt;&lt;/li&gt;
+				&lt;li class="divider"&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="tracking-order.html"&gt;&lt;i class="material-icons"&gt;exit_to_app&lt;/i&gt; Signout&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;&lt;!-- .dropdown-content --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- .top-left-nav --&gt;
+		
+	&lt;!-- App/Site Menu --&gt;
+	&lt;div id="main-menu"&gt;
+		&lt;ul&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-dashboard cyan"&gt;&lt;/span&gt; Dashboard&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="index.html"&gt;Default&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="index4.html"&gt;Account&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="index2.html"&gt;News&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="index3.html"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="header"&gt;Templates&lt;/li&gt;
+			&lt;li class="has-sub active open"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-files orange"&gt;&lt;/span&gt; Blog&lt;/a&gt;
+				&lt;ul class="expand"&gt;
+					&lt;li&gt;&lt;a href="blog_list.html"&gt;Blog List&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="blog_small-list.html"&gt;Blog small list&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="active"&gt;&lt;a href="blog_inside.html"&gt;Blog Inside&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="blog_inside-gallery.html"&gt;Gallery post&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="blog_inside-video.html"&gt;Video post&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-shopping-cart blue"&gt;&lt;/span&gt; Shop&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="shop_product-list.html"&gt;Product list&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="shop_product-small-list.html"&gt;Product small list&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="shop_inside.html"&gt;Product Inside&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="shop_cart.html"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-file red"&gt;&lt;/span&gt; Pages&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="page_404.html"&gt;404&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="page_contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="page_faq.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="page_portfolio.html"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="page_search-result.html"&gt;Search result&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="page_standard.html"&gt;Standard Page&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-mobile lime"&gt;&lt;/span&gt; Apps&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="app_login.html"&gt;Login&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="app_signup.html"&gt;Signup&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="app_page-tabs.html"&gt;Page tabs&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="app_calendar.html"&gt;Calendar&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="app_chat.html"&gt;Chat&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="header"&gt;Features&lt;/li&gt;
+			&lt;li&gt;&lt;a href="feature_forms.html"&gt;&lt;span class="icon ti-pencil-alt amber"&gt;&lt;/span&gt; Forms&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="feature_components.html"&gt;&lt;span class="icon ti-bag purple"&gt;&lt;/span&gt; Components&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="#"&gt;&lt;span class="icon ti-bag green"&gt;&lt;/span&gt; Misc&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="styling_guide.html"&gt;Styling guide&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="helpers.html"&gt;Helpers&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="icons.html"&gt;Icons&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;!-- End Site/App Menu --&gt;
+
+&lt;/div&gt;
+&lt;!-- END LEFT SIDEBAR --&gt;
+</code>
+</pre>
+					
+					</div>
+				</div>
+			</div>
+			<div class="content-section" id="content-container" >
+				<h3 class="page-title">Content</h3> 
+				<p>This element act as a container class for every content element. This class actually, make element followed have a space between top (navbar) and bottom (footer). And space for left & right handled by <code>container</code> class. So you will find two structure codes after fixed navbar. The first one.</p>
+				<div class="row">
+					<div class="col-6">
+					
+					<pre style="max-height: 500px;">
+<code class="language-html">&lt;div class="content-container"&gt;
+...
+&lt;/div&gt;</code>
+</pre>
+					</div>
+					
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+						And the second one.
+					
+					<pre style="max-height: 500px;">
+<code class="language-html">&lt;div class="container"&gt;
+	&lt;div class="row no-mb"&gt;
+		&lt;div class="col s12"&gt;
+
+			&lt;div class="content-container"&gt;
+			...
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+					
+						<div style="width: 300px;">
+							<img src="assets/images/content-cont.jpg" alt="">
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="content-section" id="footer" >
+				<h3 class="page-title">Footer</h3> 
+				<p>Footer use and marked bu class <code>footer</code>. There are several element inside. Footer header, copyright and social media. For social media icon you can use icons from 3 icon packs provided.</p>
+				<p>Here complete code of footer based on template.</p>
+				<div class="row">
+					<div class="col-4">
+						<img src="assets/images/footer.jpg" alt="">
+					</div>
+					<div class="col-8">
+					
+					<pre style="max-height: 500px;">
+<code class="language-html">&lt;!-- FOOTER --&gt;
+&lt;div class="footer"&gt;
+			
+	&lt;div class="ft-header"&gt;
+		&lt;h2 class="title"&gt;&lt;span&gt;kay&lt;/span&gt;lilla&lt;/h2&gt;
+		&lt;p class="desc"&gt;clean minimalist mobile template&lt;/p&gt;
+		&lt;div class="socmed mt-3"&gt;
+			&lt;a href="#!"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a href="#!"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a href="#!"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a href="#!"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="copyright"&gt;
+		&lt;span&gt;&copy; 2018 kaylilla mobile&lt;/span&gt;
+		&lt;div class="ft-menu"&gt;
+			&lt;a href="#!"&gt;Terms&lt;/a&gt;
+			&lt;a href="#!"&gt;Privacy policy&lt;/a&gt;
+			&lt;a href="#!"&gt;Disclaimer&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- End FOOTER --&gt;
+
+&lt;!-- Back to top Link --&gt;
+&lt;div id="to-top" class="main-bg"&gt;
+	&lt;span class="ti-arrow-up"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					
+					</div>
+				</div>
+			</div>
+
+			<div class="content-section" id="css-global" >
+				<h3 class="page-title">CSS Files & Structure</h3> 
+				<p>We provide 2 css files which is actually have same function. There are development version (<code>style.css</code>) and production version (<code>style.min.css</code>). These files located in <code>assets/css/</code> directory.</p>
+				<p>We store all additional styles including plugins style, template font, and material icons to this <code>style.css</code> with import mechanism. So in every HTML template, just only 1 referring file, <code>style.css</code> or <code>style.min.css</code>
+				<p>HTML template style/css referring file</p>
+				<pre style="max-height: 500px;">
+<code class="language-html">...
+&lt;link rel="stylesheet" type="text/css" href="assets/css/style.css"&gt;
+...</code>
+</pre>
+			<p>Additional CSS import on style.css</p>
+				<pre style="max-height: 500px;">
+<code class="language-css">/*==============================================================
+1. Import
+==============================================================*/
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('../../assets/plugins/materialize/css/materialize.min.css');
+@import url('../../assets/plugins/slick/css/slick.css');
+@import url('../../assets/plugins/animate.css/keyframe.css');
+@import url('../../assets/plugins/swipebox/css/swipebox.min.css');
+@import url('../../assets/plugins/themify/themify-icons.css');
+@import url('../../assets/plugins/font-awesome/css/font-awesome.min.css');
+</code>
+</pre>
+			</div>
+
+			<div class="content-section" id="icon-packs">
+				<h3 class="page-title">Icon packs</h3>
+				<p>There are 3 icon packs included in this template. <strong>Material</strong>, <strong>FontAwesome</strong> and <strong>themify</strong> icon.</p>
+
+				<div class="row mb-4">
+					<div class="col-12 mb-2">
+						<strong>Material</strong>
+					</div>
+					<div class="col-12">
+						To use this icon here the tag.
+					</div>
+					<div class="col-6">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;i class="material-icons"&gt;mail_outline&lt;/i&gt;</code>
+</pre>
+			
+					</div>
+				</div>
+
+				<div class="row mb-4">
+					<div class="col-12 mb-2">
+						<strong>FontAwesome</strong>
+					</div>
+					<div class="col-12">
+						To use this icon here the tag.
+					</div>
+					<div class="col-6">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;i class="fa fa-home"&gt;&lt;/i&gt;</code>
+</pre>
+			
+					</div>
+				</div>
+				
+				<div class="row mb-4">
+					<div class="col-12 mb-2">
+						<strong>Themify</strong>
+					</div>
+					<div class="col-12">
+						To use this icon here the tag.
+					</div>
+					<div class="col-6">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;span class="ti-menu"&gt;&lt;/span&gt;</code>
+</pre>
+			
+					</div>
+				</div>
+
+				<p>To see full of icon name of each icon plugin, just go to page <code>misc_icons.html</code></p>
+
+			</div>
+			
+			<div class="content-section" id="helper-class">
+				<h3 class="page-title">Helper class</h3>
+				<p>
+					Kaylilla template provide helper class that you can use for global things instantly. There are covering alignment, spacing, formatting, content and text.
+				</p>
+
+				
+				<div class="row">
+					<div class="col-6">
+
+						<div class="row mb-4">
+							<div class="col-12 mb-2">
+								<strong>Alignment</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>valign-wrapper</code></td>
+												<td>Vertically center</td>
+											</tr>
+											<tr>
+												<td><code>left-align</code></td>
+												<td>Left horizontally</td>
+											</tr>
+											<tr>
+												<td><code>right-align</code></td>
+												<td>Right horizontally</td>
+											</tr>
+											<tr>
+												<td><code>center-align</code></td>
+												<td>Center horizontally</td>
+											</tr>
+											<tr>
+												<td><code>left</code></td>
+												<td>Floating left</td>
+											</tr>
+											<tr>
+												<td><code>right</code></td>
+												<td>Floating right</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+						</div>
+
+						<div class="row mb-4">
+							<div class="col-12 mb-2">
+								<strong>Text</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Desc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>text-left</code></td>
+														<td>Left aligned text</td>
+													</tr>
+													<tr>
+														<td><code>text-center</code></td>
+														<td>Center aligned text</td>
+													</tr>
+													<tr>
+														<td><code>text-right</code></td>
+														<td>Right aligned text</td>
+													</tr>
+													<tr>
+														<td><code>text-justify</code></td>
+														<td>Justify aligned text</td>
+													</tr>
+													<tr>
+														<td><code>text-lowercase</code></td>
+														<td>Lowercased text</td>
+													</tr>
+													<tr>
+														<td><code>text-uppercase</code></td>
+														<td>Uppercased text</td>
+													</tr>
+													<tr>
+														<td><code>text-capitalize</code></td>
+														<td>Capitalized text</td>
+													</tr>
+													<tr>
+														<td><code>font-weight-bold</code></td>
+														<td>Bold text</td>
+													</tr>
+													<tr>
+														<td><code>font-weight-normal</code></td>
+														<td>Normal weight text</td>
+													</tr>
+													<tr>
+														<td><code>font-italic</code></td>
+														<td>Italic text</td>
+													</tr>
+													<tr>
+														<td><code>text-wrapping</code></td>
+														<td>Prevent text from wrapping</td>
+													</tr>
+												</tbody>
+											</table>
+
+					
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 mb-2">
+								<strong>Margin</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Desc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>m-0</code></td>
+														<td>Margin 0</td>
+													</tr>
+													<tr>
+														<td><code>m-1</code></td>
+														<td>Margin 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>m-2</code></td>
+														<td>Margin 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>m-3</code></td>
+														<td>Margin 1rem</td>
+													</tr>
+													<tr>
+														<td><code>m-4</code></td>
+														<td>Margin 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>m-5</code></td>
+														<td>Margin 3rem</td>
+													</tr>
+													<tr>
+														<td><code>mt-0</code></td>
+														<td>Margin top 0</td>
+													</tr>
+													<tr>
+														<td><code>mt-1</code></td>
+														<td>Margin top 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>mt-2</code></td>
+														<td>Margin top 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mt-3</code></td>
+														<td>Margin top 1rem</td>
+													</tr>
+													<tr>
+														<td><code>mt-4</code></td>
+														<td>Margin top 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mt-5</code></td>
+														<td>Margin top 3rem</td>
+													</tr>
+													<tr>
+														<td><code>mb-0</code></td>
+														<td>Margin bottom 0</td>
+													</tr>
+													<tr>
+														<td><code>mb-1</code></td>
+														<td>Margin bottom 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>mb-2</code></td>
+														<td>Margin bottom 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mb-3</code></td>
+														<td>Margin bottom 1rem</td>
+													</tr>
+													<tr>
+														<td><code>mb-4</code></td>
+														<td>Margin bottom 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mb-5</code></td>
+														<td>Margin bottom 3rem</td>
+													</tr>
+													<tr>
+														<td><code>ml-0</code></td>
+														<td>Margin left 0</td>
+													</tr>
+													<tr>
+														<td><code>ml-1</code></td>
+														<td>Margin left 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>ml-2</code></td>
+														<td>Margin left 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>ml-3</code></td>
+														<td>Margin left 1rem</td>
+													</tr>
+													<tr>
+														<td><code>ml-4</code></td>
+														<td>Margin left 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>ml-5</code></td>
+														<td>Margin left 3rem</td>
+													</tr>
+													<tr>
+														<td><code>mr-0</code></td>
+														<td>Margin right 0</td>
+													</tr>
+													<tr>
+														<td><code>mr-1</code></td>
+														<td>Margin right 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>mr-2</code></td>
+														<td>Margin right 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mr-3</code></td>
+														<td>Margin right 1rem</td>
+													</tr>
+													<tr>
+														<td><code>mr-4</code></td>
+														<td>Margin right 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>mr-5</code></td>
+														<td>Margin right 3rem</td>
+													</tr>
+												</tbody>
+											</table>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="col-6">
+						
+						<div class="row mb-4">
+							<div class="col-12 mb-2">
+								<strong>Formatting</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Desc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>truncate</code></td>
+														<td>To truncate long lines of text in an ellipsis</td>
+													</tr>
+													<tr>
+														<td><code>hoverable</code></td>
+														<td>Add an animation for box shadow</td>
+													</tr>
+												</tbody>
+											</table>
+
+							</div>
+						</div>
+
+						<div class="row mb-4">
+							<div class="col-12 mb-2">
+								<strong>Hiding/showing content</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Desc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>.hide</code></td>
+														<td>Hidden for all Devices</td>
+													</tr>
+													<tr>
+														<td><code>.hide-on-small-only</code></td>
+														<td>Hidden for Mobile Only</td>
+													</tr>
+													<tr>
+														<td><code>.hide-on-med-only</code></td>
+														<td>Hidden for Tablet Only</td>
+													</tr>
+													<tr>
+														<td><code>.hide-on-med-and-down</code></td>
+														<td>Hidden for Tablet and Below</td>
+													</tr>
+													<tr>
+														<td><code>.hide-on-med-and-up</code></td>
+														<td>Hidden for Tablet and Above</td>
+													</tr>
+													<tr>
+														<td><code>.hide-on-large-only</code></td>
+														<td>Hidden for Desktop Only</td>
+													</tr>
+													<tr>
+														<td><code>.show-on-small</code></td>
+														<td>Show for Mobile Only</td>
+													</tr>
+													<tr>
+														<td><code>.show-on-medium</code></td>
+														<td>Show for Tablet Only</td>
+													</tr>
+													<tr>
+														<td><code>.show-on-large</code></td>
+														<td>Show for Desktop Only</td>
+													</tr>
+													<tr>
+														<td><code>.show-on-medium-and-up</code></td>
+														<td>Show for Tablet and Above</td>
+													</tr>
+													<tr>
+														<td><code>.show-on-medium-and-down</code></td>
+														<td>Show for Tablet and Below</td>
+													</tr>
+												</tbody>
+											</table>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 mb-2">
+								<strong>Padding</strong>
+							</div>
+							<div class="col-12">
+								<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Desc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>p-0</code></td>
+														<td>Padding 0</td>
+													</tr>
+													<tr>
+														<td><code>p-1</code></td>
+														<td>Padding 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>p-2</code></td>
+														<td>Padding 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>p-3</code></td>
+														<td>Padding 1rem</td>
+													</tr>
+													<tr>
+														<td><code>p-4</code></td>
+														<td>Padding 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>p-5</code></td>
+														<td>Padding 3rem</td>
+													</tr>
+													<tr>
+														<td><code>pt-0</code></td>
+														<td>Padding top 0</td>
+													</tr>
+													<tr>
+														<td><code>pt-1</code></td>
+														<td>Padding top 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>pt-2</code></td>
+														<td>Padding top 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pt-3</code></td>
+														<td>Padding top 1rem</td>
+													</tr>
+													<tr>
+														<td><code>pt-4</code></td>
+														<td>Padding top 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pt-5</code></td>
+														<td>Padding top 3rem</td>
+													</tr>
+													<tr>
+														<td><code>pb-0</code></td>
+														<td>Padding bottom 0</td>
+													</tr>
+													<tr>
+														<td><code>pb-1</code></td>
+														<td>Padding bottom 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>pb-2</code></td>
+														<td>Padding bottom 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pb-3</code></td>
+														<td>Padding bottom 1rem</td>
+													</tr>
+													<tr>
+														<td><code>pb-4</code></td>
+														<td>Padding bottom 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pb-5</code></td>
+														<td>Padding bottom 3rem</td>
+													</tr>
+													<tr>
+														<td><code>pl-0</code></td>
+														<td>Padding left 0</td>
+													</tr>
+													<tr>
+														<td><code>pl-1</code></td>
+														<td>Padding left 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>pl-2</code></td>
+														<td>Padding left 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pl-3</code></td>
+														<td>Padding left 1rem</td>
+													</tr>
+													<tr>
+														<td><code>pl-4</code></td>
+														<td>Padding left 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pl-5</code></td>
+														<td>Padding left 3rem</td>
+													</tr>
+													<tr>
+														<td><code>pr-0</code></td>
+														<td>Padding right 0</td>
+													</tr>
+													<tr>
+														<td><code>pr-1</code></td>
+														<td>Padding right 0.25rem</td>
+													</tr>
+													<tr>
+														<td><code>pr-2</code></td>
+														<td>Padding right 0.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pr-3</code></td>
+														<td>Padding right 1rem</td>
+													</tr>
+													<tr>
+														<td><code>pr-4</code></td>
+														<td>Padding right 1.5rem</td>
+													</tr>
+													<tr>
+														<td><code>pr-5</code></td>
+														<td>Padding right 3rem</td>
+													</tr>
+												</tbody>
+											</table>
+
+						
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				
+				
+			
+			</div>
+
+			<div class="content-section" id="fixed-navbar" >
+				<h3 class="page-title">Fixed navbar</h3> 
+				<p>File <code>custom.js</code> used to create instance functions almost all plugins included. This file located in <code>assets/js/custom.js</code>.</p>
+
+				<p>As explaining about navbar before, the behaviour control of this element is throurgh jQuery. And here the script that you can find on file custom.js</p>
+
+				<div class="row mb-5">
+					<div class="col-4">
+						<div class="mb-4">
+							<img src="assets/images/fixed-navbar.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 300px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* Fixed navbar -------------------------------*/
+	if( $('.fixed-navbar').length ) {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 0 ) {
+				$('.fixed-navbar .top-navbar').addClass("fly");
+				$('.fixed-navbar .content-container').css('margin-top', '54px');
+			} else {
+				$('.fixed-navbar .top-navbar').removeClass("fly");
+				$('.fixed-navbar .content-container').css('margin-top', '0');
+			}
+		});
+	}
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12">
+						<div class="font-weight-bold mb-3">Fixed tabs</div>
+					</div>
+					<div class="col-4">
+						<div class="mb-4">
+							<img src="assets/images/fixed-tabs.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 300px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* Fixed tabs -------------------------------*/
+	if( $('.fixed-tabs').length ) {
+		var fn = $('.front-navigation').outerHeight(true),
+			ft = $('.fixed-tabs .top-navbar.with-tabs .tabs-wrapper').outerHeight(true);
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > fn ) {
+				$('.fixed-tabs .top-navbar.with-tabs .tabs-wrapper').addClass("fly");
+				$('.fixed-tabs .content-container').css('margin-top', ft + 'px');
+			} else {
+				$('.fixed-tabs .top-navbar.with-tabs .tabs-wrapper').removeClass("fly");
+				$('.fixed-tabs .content-container').css('margin-top', '0');
+			}
+		});
+	}
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12">
+						<div class="font-weight-bold mb-3">Searchbar</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/searchbar.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 300px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* Show/hide search form ----------------------*/
+	$('.show-search').on('click', function() {
+		$('.searchbar').addClass('show');
+		$('.front-navigation').addClass('hide');
+		$('.searchbar input[type="text"]').focus();
+	});
+	$('.search-close').on('click', function() {
+		$('.searchbar').removeClass('show');
+		$('.front-navigation').removeClass('hide');
+	});
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content-section" id="slick-slider">
+				<h3 class="page-title">Slick slider</h3> 
+
+				<div class="row mb-5">
+					<div class="col-12 mb-2">
+						<div class="font-weight-bold">Shop slider</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/shop-slider.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 500px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* News slider (index2.html) ---------------------------*/
+	$('.home-slider.news').slick({
+		dots: false,
+		arrows: true,
+		fade: false,
+		autoplay: true,
+		speed: 800,
+		cssEase: 'linear',
+		prevArrow: '<span class="prev-arr"><span class="ti-arrow-left"></span></span>',
+		nextArrow: '<span class="next-arr"><span class="ti-arrow-right"></span></span>',
+	});
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12 mb-2">
+						<div class="font-weight-bold mb-1">Main slider</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/main-slider.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 1100px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* Main slider (index.html) ----------------------------*/
+	$('.home-slider.flat').slick({
+		dots: true,
+		arrows: false,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		speed: 2000,
+	});
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12 mb-2">
+						<div class="font-weight-bold mb-1">News slider</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/news-slider.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 1100px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	/* News slider (index2.html) ---------------------------*/
+	$('.home-slider.news').slick({
+		dots: false,
+		arrows: true,
+		fade: false,
+		autoplay: true,
+		speed: 800,
+		cssEase: 'linear',
+		prevArrow: '<span class="prev-arr"><span class="ti-arrow-left"></span></span>',
+		nextArrow: '<span class="next-arr"><span class="ti-arrow-right"></span></span>',
+	});
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12 mb-2">
+						<div class="font-weight-bold mb-1">Shop featured products</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/featured-products.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 1100px;">
+<code class="language-js">$(function() {
+	
+	...
+
+	// Product (thumb) slider
+	$('.home-featured-products').slick({
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        slidesToShow: 2,
+		slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            },
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2
+
+            }
+        }]
+    });
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-12 mb-2">
+						<div class="font-weight-bold mb-1">Gallery</div>
+					</div>
+					<div class="col-4">
+						<div>
+							<img src="assets/images/thumb-gallery.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 1100px;">
+<code class="language-js">$(function() {
+	
+	...
+	
+	/* Blog gallery -------------------------------*/
+	$('.thumb-gallery').slick({
+		dots: false,
+		arrows: true,
+		autoplay: true,
+		speed: 500,
+		autoplaySpeed: 4000,
+		cssEase: 'linear',
+		prevArrow: '<span class="prev-arr"><span class="ti-arrow-left"></span></span>',
+		nextArrow: '<span class="next-arr"><span class="ti-arrow-right"></span></span>',
+	});
+	/*------------------------------------------------------*/
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+				<div class="row mb-4">
+					<div class="col-12 mb-3">
+						<strong>Settings</strong>
+					</div>
+					<div class="col-12">
+						
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Param</th>
+									<th>Type</th>
+									<th>Default</th>
+									<th>Desc</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>accessibility</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enables tabbing and arrow key navigation</td>
+								</tr>
+								<tr>
+									<td>adaptiveHeight</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Enables adaptive height for single slide horizontal carousels.</td>
+								</tr>
+								<tr>
+									<td>autoplay</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Enables Autoplay</td>
+								</tr>
+								<tr>
+									<td>autoplaySpeed</td>
+									<td>int(ms)</td>
+									<td>3000</td>
+									<td>Autoplay Speed in milliseconds</td>
+								</tr>
+								<tr>
+									<td>arrows</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Prev/Next Arrows</td>
+								</tr>
+								<tr>
+									<td>asNavFor</td>
+									<td>string</td>
+									<td>null</td>
+									<td>Set the slider to be the navigation of other slider (Class or ID Name)</td>
+								</tr>
+								<tr>
+									<td>appendArrows</td>
+									<td>string</td>
+									<td>$(element)</td>
+									<td>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</td>
+								</tr>
+								<tr>
+									<td>appendDots</td>
+									<td>string</td>
+									<td>$(element)</td>
+									<td>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</td>
+								</tr>
+								<tr>
+									<td>prevArrow</td>
+									<td>string (html|jQuery selector) | object (DOM node|jQuery object)</td>
+									<td>&lt;button type="button" class="slick-prev"&gt;Previous&lt;/button&gt;</td>
+									<td>Allows you to select a node or customize the HTML for the "Previous" arrow.</td>
+								</tr>
+								<tr>
+									<td>nextArrow</td>
+									<td>string (html|jQuery selector) | object (DOM node|jQuery object)</td>
+									<td>&lt;button type="button" class="slick-next"&gt;Next&lt;/button&gt;</td>
+									<td>Allows you to select a node or customize the HTML for the "Next" arrow.</td>
+								</tr>
+								<tr>
+									<td>centerMode</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts</td>
+								</tr>
+								<tr>
+									<td>centerPadding</td>
+									<td>string</td>
+									<td>'50px'</td>
+									<td>Side padding when in center mode (px or %)</td>
+								</tr>
+								<tr>
+									<td>cssEase</td>
+									<td>string</td>
+									<td>'ease'</td>
+									<td>Enables tabbing and arrow key navigation</td>
+								</tr>
+								<tr>
+									<td>customPaging</td>
+									<td>function</td>
+									<td>n/a</td>
+									<td>Custom paging templates. See source for use example.</td>
+								</tr>
+								<tr>
+									<td>dots</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Show dot indicators</td>
+								</tr>
+								<tr>
+									<td>dotsClass</td>
+									<td>string</td>
+									<td>'slick-dots'</td>
+									<td>Class for slide indicator dots container</td>
+								</tr>
+								<tr>
+									<td>draggable</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enable mouse dragging</td>
+								</tr>
+								<tr>
+									<td>fade</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Enable fade</td>
+								</tr>
+								<tr>
+									<td>focusOnSelect</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Enable focus on selected element (click)</td>
+								</tr>
+								<tr>
+									<td>easing</td>
+									<td>string</td>
+									<td>'linear'</td>
+									<td>Add easing for jQuery animate. Use with easing libraries or default easing methods</td>
+								</tr>
+								<tr>
+									<td>edgeFriction</td>
+									<td>integer</td>
+									<td>0.15</td>
+									<td>Resistance when swiping edges of non-infinite carousels</td>
+								</tr>
+								<tr>
+									<td>infinite</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Infinite loop sliding</td>
+								</tr>
+								<tr>
+									<td>initialSlide</td>
+									<td>integer</td>
+									<td>0</td>
+									<td>Slide to start on</td>
+								</tr>
+								<tr>
+									<td>lazyLoad</td>
+									<td>string</td>
+									<td>'ondemand'</td>
+									<td>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</td>
+								</tr>
+								<tr>
+									<td>mobileFirst</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Responsive settings use mobile first calculation</td>
+								</tr>
+								<tr>
+									<td>pauseOnFocus</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Pause Autoplay On Focus</td>
+								</tr>
+								<tr>
+									<td>pauseOnHover</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Pause Autoplay On Hover</td>
+								</tr>
+								<tr>
+									<td>pauseOnDotsHover</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Pause Autoplay when a dot is hovered</td>
+								</tr>
+								<tr>
+									<td>respondTo</td>
+									<td>string</td>
+									<td>'window'</td>
+									<td>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</td>
+								</tr>
+								<tr>
+									<td>responsive</td>
+									<td>object</td>
+									<td>none</td>
+									<td>Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.</td>
+								</tr>
+								<tr>
+									<td>rows</td>
+									<td>int</td>
+									<td>1</td>
+									<td>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</td>
+								</tr>
+								<tr>
+									<td>slide</td>
+									<td>element</td>
+									<td>''</td>
+									<td>Element query to use as slide</td>
+								</tr>
+								<tr>
+									<td>slidesPerRow</td>
+									<td>slidesPerRow</td>
+									<td>1</td>
+									<td>With grid mode intialized via the rows option, this sets how many slides are in each grid row. dver</td>
+								</tr>
+								<tr>
+									<td>slidesToShow</td>
+									<td>int</td>
+									<td>1</td>
+									<td># of slides to show</td>
+								</tr>
+								<tr>
+									<td>slidesToScroll</td>
+									<td>int</td>
+									<td>1</td>
+									<td># of slides to scroll</td>
+								</tr>
+								<tr>
+									<td>speed</td>
+									<td>int(ms)</td>
+									<td>300</td>
+									<td>Slide/Fade animation speed</td>
+								</tr>
+								<tr>
+									<td>swipe</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enable swiping</td>
+								</tr>
+								<tr>
+									<td>swipeToSlide</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</td>
+								</tr>
+								<tr>
+									<td>touchMove</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enable slide motion with touch</td>
+								</tr>
+								<tr>
+									<td>touchThreshold</td>
+									<td>int</td>
+									<td>5</td>
+									<td>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</td>
+								</tr>
+								<tr>
+									<td>useCSS</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enable/Disable CSS Transitions</td>
+								</tr>
+								<tr>
+									<td>useTransform</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Enable/Disable CSS Transforms</td>
+								</tr>
+								<tr>
+									<td>variableWidth</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Variable width slides</td>
+								</tr>
+								<tr>
+									<td>vertical</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Vertical slide mode</td>
+								</tr>
+								<tr>
+									<td>verticalSwiping</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Vertical swipe mode</td>
+								</tr>
+								<tr>
+									<td>rtl</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Change the slider's direction to become right-to-left</td>
+								</tr>
+								<tr>
+									<td>waitForAnimate</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Ignores requests to advance the slide while animating</td>
+								</tr>
+								<tr>
+									<td>zIndex</td>
+									<td>number</td>
+									<td>1000</td>
+									<td>Set the zIndex values for slides, useful for IE9 and lower</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 mb-3">
+						<strong>Event</strong>
+					</div>
+					<div class="col-12">
+						
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Event</th>
+									<th>Arguments</th>
+									<th>Desc</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>afterChange</td>
+									<td>slick, currentSlide</td>
+									<td>Fires after slide change</td>
+								</tr>
+								<tr>
+									<td>beforeChange</td>
+									<td>slick, currentSlide, nextSlide</td>
+									<td>Fires before slide change</td>
+								</tr>
+								<tr>
+									<td>breakpoint</td>
+									<td>event, slick, breakpoint</td>
+									<td>Fires after a breakpoint is hit.</td>
+								</tr>
+								<tr>
+									<td>destroy</td>
+									<td>event, slick</td>
+									<td>When slider is destroyed, or unslicked.</td>
+								</tr>
+								<tr>
+									<td>edge</td>
+									<td>slick, direction</td>
+									<td>Fires when an edge is overscrolled in non-infinite mode.</td>
+								</tr>
+								<tr>
+									<td>init</td>
+									<td>slick</td>
+									<td>Fires after first initialization.</td>
+								</tr>
+								<tr>
+									<td>reInit</td>
+									<td>slick</td>
+									<td>Fires after every re-initialization</td>
+								</tr>
+								<tr>
+									<td>setPosition</td>
+									<td>slick</td>
+									<td>Fires after position/size changes</td>
+								</tr>
+								<tr>
+									<td>swipe</td>
+									<td>slick, direction</td>
+									<td>Fires after swipe/drag</td>
+								</tr>
+								<tr>
+									<td>lazyLoaded</td>
+									<td>event, slick, image, imageSource</td>
+									<td>Fires after image loads lazily</td>
+								</tr>
+								<tr>
+									<td>lazyLoadError</td>
+									<td>event, slick, image, imageSource</td>
+									<td>Fires after image fails to load</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="content-section" id="scroll-top">
+				<h3 class="page-title">Scroll to top</h3>
+
+				<div class="row">
+					<div class="col-12">
+						Scroll to top navigation is element navigation used for user to make easy back to top. This element put on footer section, and here the HTML tag.
+					</div>
+					<div class="col-6 mb-4">
+						<pre style="max-height: 250px;">
+<code class="language-html">&lt;div id="to-top" class="main-bg"&gt;
+	&lt;span class="ti-arrow-up"&gt;&lt;/span&gt;
+&lt;/div&gt;</code>
+</pre>
+					</div>
+					<div class="col-12 mb-2">
+						And here jQuery script.
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-4">
+						<img src="assets/images/scroll-to-top.jpg" alt="">
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 500px;">
+<code class="language-js">$(function() {
+	
+	....
+
+	/* ==============================================
+	** Scroll top
+	 ==============================================*/
+	var winScroll = $(window).scrollTop();
+	if (winScroll > 1) {
+		$('#to-top').css({bottom:"0"});
+	} else {
+		$('#to-top').css({bottom:"0"});
+	}
+	$(window).on("scroll",function(){
+		winScroll = $(window).scrollTop();
+
+		if (winScroll > 1) {
+			$('#to-top').css({opacity:1,bottom:"0"});
+		} else {
+			$('#to-top').css({opacity:0,bottom:"-30px"});
+		}
+	});
+	$('#to-top').on("click", function() {
+		$('html, body').animate({scrollTop: '0px'}, 800);
+		return false;
+	});
+	/*------------------------------------------------------*/
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content-section" id="portfolio">
+				<h3 class="page-title">Portfolio</h3>
+
+				<div class="row">
+					<div class="col-12">
+						Portfolio is a page that contain list of grouped image. Its use 3rd plugin mixItUp. And here the full HTML syntax.
+					</div>
+					<div class="col-12 mb-4">
+						<pre style="max-height: 400px;">
+<code class="language-html">&lt;div class="portfolio animated fadeInUp"&gt;
+
+	&lt;div class="port-nav-container"&gt;
+		&lt;div class="port-nav"&gt;
+			&lt;a href="#" class="port-grid active"&gt;&lt;span class="ti-view-grid"&gt;&lt;/span&gt;&lt;/a&gt;
+			&lt;a href="#" class="port-list"&gt;&lt;span class="ti-view-list"&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="port-tabs"&gt;
+			&lt;ul class="tabs"&gt;&lt;!-- Tabs navigation --&gt;
+				&lt;li class="tab filter-btn" data-filter="all"&gt;&lt;a class="active" href="#one"&gt;All&lt;/a&gt;&lt;/li&gt;
+				&lt;li class="tab filter-btn" data-filter=".blog"&gt;&lt;a href="#blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+				&lt;li class="tab filter-btn" data-filter=".shop"&gt;&lt;a href="#shop"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;&lt;!-- End Tabs navigation --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+								
+	&lt;!-- Gallery image lists --&gt;
+	&lt;div id="mix-wrapper"&gt;
+		&lt;a href="assets/images/freestocks-org-187367-unsplash.jpg" class="swipebox mix-target blog" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/freestocks-org-187367-unsplash.jpg" alt="image"&gt;
+		&lt;/a&gt;
+		&lt;a href="assets/images/freestocks-org-182582-unsplash.jpg" class="swipebox mix-target shop" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/freestocks-org-182582-unsplash.jpg" alt=""&gt;
+		&lt;/a&gt;
+		&lt;a href="assets/images/anna-dziubinska-348-unsplash.jpg" class="swipebox mix-target blog" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/anna-dziubinska-348-unsplash.jpg" alt=""&gt;
+		&lt;/a&gt;
+		&lt;a href="assets/images/foto-sushi-128246-unsplash.jpg" class="swipebox mix-target shop" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/foto-sushi-128246-unsplash.jpg" alt=""&gt;
+		&lt;/a&gt;
+		&lt;a href="assets/images/vlad-tchompalov-219130-unsplash.jpg" class="swipebox mix-target blog" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/vlad-tchompalov-219130-unsplash.jpg" alt="image"&gt;
+		&lt;/a&gt;
+		&lt;a href="assets/images/freestocks-org-182582-unsplash.jpg" class="swipebox mix-target shop" title="This is dummy caption."&gt;
+			&lt;img src="assets/images/freestocks-org-182582-unsplash.jpg" alt=""&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!-- End Gallery image lists --&gt;
+
+	&lt;div class="clear"&gt;&lt;/div&gt;
+
+&lt;/div&gt;</code>
+</pre>
+					</div>
+					<div class="col-12 mb-2">
+						And here jQuery script.
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col-4">
+						<img src="assets/images/portfolio.jpg" alt="">
+					</div>
+					<div class="col-8">
+					<pre style="max-height: 500px;">
+<code class="language-js">$(function() {
+	
+	....
+
+	/* ==============================================
+	** Portfolio mixItUp
+	 ==============================================*/
+	$('#mix-wrapper').mixItUp({
+		load: {
+			sort: 'order:asc'
+		},
+		selectors: {
+			target: '.mix-target',
+			filter: '.filter-btn',
+			sort: '.sort-btn'
+		},
+		animation: {
+                animateChangeLayout: true,
+                animateResizeTargets: true
+            },
+		layout: {
+          containerClass: 'portfolio-grid'
+        },
+		callbacks: {
+			onMixEnd: function(state){
+			}
+		}
+	});
+
+	...
+
+});
+</code>
+</pre>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content-section" id="credits" >
+				<h3 class="page-title">Credits</h3> 
+				<ul>
+					<li><a href="https://jquery.org/" target="_blank">jquery</a> licenced under <a href="https://jquery.org/license/" target="_blank">MIT license</a></li>
+					<li><a href="http://fontawesome.io" target="_blank">FontAwesome</a> licensed under the <a href="http://scripts.sil.org/OFL" target="_blank">SIL OFL 1.1</a></li>
+					<li><a href="http://materializecss.com/" target="_blank">materialize</a> licenced under <a href="https://github.com/Dogfalo/materialize/blob/master/LICENSE" target="_blank">MIT license</a></li>
+					<li><a href="http://kenwheeler.github.io/slick/" target="_blank">slick</a> licenced under <a href="https://github.com/kenwheeler/slick/blob/master/LICENSE" target="_blank">MIT license</a></li>
+					<li><a href="http://brutaldesign.github.io/swipebox/" target="_blank">swipebox</a> licenced <a href="https://github.com/mrfoto/swipebox/blob/master/MIT-LICENSE" target="_blank">Miha Rekar</a></li>
+					<li><a href="https://themify.me/" target="_blank">Themify</a> licenced <a href="https://themify.me/terms" target="_blank">GNU GPL</a></li>
+					<li><a href="https://www.kunkalabs.com/mixitup/" target="_blank">MixItUp</a> licenced <a href="https://www.kunkalabs.com/mixitup/licenses/" target="_blank">CC-BY-ND</a></li>
+				</ul>
+				<h3 class="subtitle">Image Sources</h3>
+				<ul>
+					<li><a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></li>
+				</ul>
+
+				<p><strong>Note: All images are just used for Preview Purpose Only. They are not part of the theme and NOT included in the final purchase files.</strong></p>
+			</div>
+			
+			
+
+		</div>
+
+	</div>
+</div> <!-- body-wrapper -->
+<script type="text/javascript" src="assets/jquery.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
+<script type="text/javascript" src="assets/prism.js"></script>
+</body>
+</html>

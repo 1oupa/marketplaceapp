@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul>
+							<li><a href="index.html">Shop</a></li>
+							<li><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul>
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul>
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub active open"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul class="expand">
+							<li><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li class="active"><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<div class="container">
+				<div class="row no-mb">
+					<div class="col s12">
+
+						<!-- Content container -->
+						<div class="content-container misc_helpers">
+
+							<!-- Page title -->
+							<div class="page-title animated fadeInRight">
+								Helpers
+							</div><!-- .page-title -->
+
+							<div class="animated fadeInUp">
+							
+								<!-- Alignment -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Alignment
+									</div>
+
+									<table>
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>valign-wrapper</code></td>
+												<td>Vertically center</td>
+											</tr>
+											<tr>
+												<td><code>left-align</code></td>
+												<td>Left horizontally</td>
+											</tr>
+											<tr>
+												<td><code>right-align</code></td>
+												<td>Right horizontally</td>
+											</tr>
+											<tr>
+												<td><code>center-align</code></td>
+												<td>Center horizontally</td>
+											</tr>
+											<tr>
+												<td><code>left</code></td>
+												<td>Floating left</td>
+											</tr>
+											<tr>
+												<td><code>right</code></td>
+												<td>Floating right</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Alignment -->
+
+								<!-- Formatting -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Formatting
+									</div>
+
+									<table>
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>truncate</code></td>
+												<td>To truncate long lines of text in an ellipsis</td>
+											</tr>
+											<tr>
+												<td><code>hoverable</code></td>
+												<td>Add an animation for box shadow</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Formatting -->
+
+								<!-- Hiding/showing content -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Hiding/showing content
+									</div>
+
+									<table class="striped">
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code class=" language-markup">.hide</code></td>
+												<td>Hidden for all Devices</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.hide-on-small-only</code></td>
+												<td>Hidden for Mobile Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.hide-on-med-only</code></td>
+												<td>Hidden for Tablet Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.hide-on-med-and-down</code></td>
+												<td>Hidden for Tablet and Below</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.hide-on-med-and-up</code></td>
+												<td>Hidden for Tablet and Above</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.hide-on-large-only</code></td>
+												<td>Hidden for Desktop Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.show-on-small</code></td>
+												<td>Show for Mobile Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.show-on-medium</code></td>
+												<td>Show for Tablet Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.show-on-large</code></td>
+												<td>Show for Desktop Only</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.show-on-medium-and-up</code></td>
+												<td>Show for Tablet and Above</td>
+											</tr>
+											<tr>
+												<td><code class=" language-markup">.show-on-medium-and-down</code></td>
+												<td>Show for Tablet and Below</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Hiding/showing content -->
+
+								<!-- Margin -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Margin
+									</div>
+
+									<table class="striped">
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>m-0</code></td>
+												<td>Margin 0</td>
+											</tr>
+											<tr>
+												<td><code>m-1</code></td>
+												<td>Margin 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>m-2</code></td>
+												<td>Margin 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>m-3</code></td>
+												<td>Margin 1rem</td>
+											</tr>
+											<tr>
+												<td><code>m-4</code></td>
+												<td>Margin 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>m-5</code></td>
+												<td>Margin 3rem</td>
+											</tr>
+											<tr>
+												<td><code>mt-0</code></td>
+												<td>Margin top 0</td>
+											</tr>
+											<tr>
+												<td><code>mt-1</code></td>
+												<td>Margin top 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>mt-2</code></td>
+												<td>Margin top 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mt-3</code></td>
+												<td>Margin top 1rem</td>
+											</tr>
+											<tr>
+												<td><code>mt-4</code></td>
+												<td>Margin top 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mt-5</code></td>
+												<td>Margin top 3rem</td>
+											</tr>
+											<tr>
+												<td><code>mb-0</code></td>
+												<td>Margin bottom 0</td>
+											</tr>
+											<tr>
+												<td><code>mb-1</code></td>
+												<td>Margin bottom 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>mb-2</code></td>
+												<td>Margin bottom 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mb-3</code></td>
+												<td>Margin bottom 1rem</td>
+											</tr>
+											<tr>
+												<td><code>mb-4</code></td>
+												<td>Margin bottom 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mb-5</code></td>
+												<td>Margin bottom 3rem</td>
+											</tr>
+											<tr>
+												<td><code>ml-0</code></td>
+												<td>Margin left 0</td>
+											</tr>
+											<tr>
+												<td><code>ml-1</code></td>
+												<td>Margin left 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>ml-2</code></td>
+												<td>Margin left 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>ml-3</code></td>
+												<td>Margin left 1rem</td>
+											</tr>
+											<tr>
+												<td><code>ml-4</code></td>
+												<td>Margin left 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>ml-5</code></td>
+												<td>Margin left 3rem</td>
+											</tr>
+											<tr>
+												<td><code>mr-0</code></td>
+												<td>Margin right 0</td>
+											</tr>
+											<tr>
+												<td><code>mr-1</code></td>
+												<td>Margin right 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>mr-2</code></td>
+												<td>Margin right 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mr-3</code></td>
+												<td>Margin right 1rem</td>
+											</tr>
+											<tr>
+												<td><code>mr-4</code></td>
+												<td>Margin right 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>mr-5</code></td>
+												<td>Margin right 3rem</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Margin -->
+
+								<!-- Padding -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Padding
+									</div>
+
+									<table class="striped">
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>p-0</code></td>
+												<td>Padding 0</td>
+											</tr>
+											<tr>
+												<td><code>p-1</code></td>
+												<td>Padding 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>p-2</code></td>
+												<td>Padding 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>p-3</code></td>
+												<td>Padding 1rem</td>
+											</tr>
+											<tr>
+												<td><code>p-4</code></td>
+												<td>Padding 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>p-5</code></td>
+												<td>Padding 3rem</td>
+											</tr>
+											<tr>
+												<td><code>pt-0</code></td>
+												<td>Padding top 0</td>
+											</tr>
+											<tr>
+												<td><code>pt-1</code></td>
+												<td>Padding top 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>pt-2</code></td>
+												<td>Padding top 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pt-3</code></td>
+												<td>Padding top 1rem</td>
+											</tr>
+											<tr>
+												<td><code>pt-4</code></td>
+												<td>Padding top 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pt-5</code></td>
+												<td>Padding top 3rem</td>
+											</tr>
+											<tr>
+												<td><code>pb-0</code></td>
+												<td>Padding bottom 0</td>
+											</tr>
+											<tr>
+												<td><code>pb-1</code></td>
+												<td>Padding bottom 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>pb-2</code></td>
+												<td>Padding bottom 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pb-3</code></td>
+												<td>Padding bottom 1rem</td>
+											</tr>
+											<tr>
+												<td><code>pb-4</code></td>
+												<td>Padding bottom 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pb-5</code></td>
+												<td>Padding bottom 3rem</td>
+											</tr>
+											<tr>
+												<td><code>pl-0</code></td>
+												<td>Padding left 0</td>
+											</tr>
+											<tr>
+												<td><code>pl-1</code></td>
+												<td>Padding left 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>pl-2</code></td>
+												<td>Padding left 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pl-3</code></td>
+												<td>Padding left 1rem</td>
+											</tr>
+											<tr>
+												<td><code>pl-4</code></td>
+												<td>Padding left 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pl-5</code></td>
+												<td>Padding left 3rem</td>
+											</tr>
+											<tr>
+												<td><code>pr-0</code></td>
+												<td>Padding right 0</td>
+											</tr>
+											<tr>
+												<td><code>pr-1</code></td>
+												<td>Padding right 0.25rem</td>
+											</tr>
+											<tr>
+												<td><code>pr-2</code></td>
+												<td>Padding right 0.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pr-3</code></td>
+												<td>Padding right 1rem</td>
+											</tr>
+											<tr>
+												<td><code>pr-4</code></td>
+												<td>Padding right 1.5rem</td>
+											</tr>
+											<tr>
+												<td><code>pr-5</code></td>
+												<td>Padding right 3rem</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Padding -->
+
+								<!-- Text -->
+								<div class="home-widget no-mb">
+									<div class="widget-title">
+										Text
+									</div>
+
+									<table class="striped">
+										<thead>
+											<tr>
+												<th>Class</th>
+												<th>Desc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>text-left</code></td>
+												<td>Left aligned text</td>
+											</tr>
+											<tr>
+												<td><code>text-center</code></td>
+												<td>Center aligned text</td>
+											</tr>
+											<tr>
+												<td><code>text-right</code></td>
+												<td>Right aligned text</td>
+											</tr>
+											<tr>
+												<td><code>text-justify</code></td>
+												<td>Justify aligned text</td>
+											</tr>
+											<tr>
+												<td><code>text-lowercase</code></td>
+												<td>Lowercased text</td>
+											</tr>
+											<tr>
+												<td><code>text-uppercase</code></td>
+												<td>Uppercased text</td>
+											</tr>
+											<tr>
+												<td><code>text-capitalize</code></td>
+												<td>Capitalized text</td>
+											</tr>
+											<tr>
+												<td><code>font-weight-bold</code></td>
+												<td>Bold text</td>
+											</tr>
+											<tr>
+												<td><code>font-weight-normal</code></td>
+												<td>Normal weight text</td>
+											</tr>
+											<tr>
+												<td><code>font-italic</code></td>
+												<td>Italic text</td>
+											</tr>
+											<tr>
+												<td><code>text-wrapping</code></td>
+												<td>Prevent text from wrapping</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- End Text -->
+
+							</div><!-- .animated fadeInUp -->
+
+
+						</div><!-- .content-container -->
+						<!-- END CONTENT CONTAINER -->
+
+					</div><!-- .col s12 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

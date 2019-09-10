@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul>
+							<li><a href="index.html">Shop</a></li>
+							<li><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul>
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul>
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub active open"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul class="expand">
+							<li class="active"><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<div class="container">
+				<div class="row no-mb">
+					<div class="col s12">
+
+						<!-- Content container -->
+						<div class="content-container">
+
+							<!-- Page title -->
+							<div class="page-title animated fadeInRight">
+								Styling guide
+							</div><!-- .page-title -->
+
+							<div class="entry-content animated fadeInUp">
+								
+								<div class="home-widget">
+									<div class="widget-title">
+										Heading
+									</div>
+
+										<h1>Heading One</h1>
+										<h2>Heading Two</h2>
+										<h3>Heading Three</h3>
+										<h4>Heading Four</h4>
+										<h5>Heading Five</h5>
+										<h6>Heading Six</h6>
+
+								</div>
+
+								<div class="home-widget">
+									<div class="widget-title">
+										List item styling
+									</div>
+
+									<span class="semibold">Unordered list item</span>
+									<ul class="mt-2">
+										<li>Unordered list item one</li>
+										<li>Unordered list item two
+										<li>Unordered list item three</li>
+									</ul>
+									<span class="semibold">Ordered list item</span>
+									<ol class="mt-2 no-mb">
+										<li>Ordered list item one</li>
+										<li>Ordered list item two
+										<li>Ordered list item three</li>
+									</ol>
+								</div>
+
+								<div class="home-widget">
+									<div class="widget-title">
+										Blockquote
+									</div>
+
+									<p class="mb-2">The blockquote is used to indicate the quotation of a large section of text from another source.</p>
+
+									<blockquote class="no-mb no-mt">
+										People who are the best is people who are being useful for others
+										<cite>- Anonymous</cite>
+									</blockquote>
+								</div>
+
+								<div class="home-widget">
+									<div class="widget-title">
+										Code Formatting
+									</div>
+
+									<p class="mb-2">Use tag <code>&lt;pre&gt;</code> to write your code.</p>
+									<pre class="no-mb">.my-style {<br>display:none;<br>overflow:hidden;<br>}</pre>
+								</div>
+
+								<div class="home-widget no-mb">
+									<div class="widget-title">
+										Table
+									</div>
+
+									<span class="semibold">Table Standard</span>
+									<table class="mb-4">
+										<thead>
+										  <tr>
+											  <th data-field="id">Name</th>
+											  <th data-field="name">Item Name</th>
+											  <th data-field="price">Item Price</th>
+										  </tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>Alvin</td>
+												<td>Eclair</td>
+												<td>$0.87</td>
+											</tr>
+											<tr>
+												<td>Alan</td>
+												<td>Jellybean</td>
+												<td>$3.76</td>
+											</tr>
+											<tr>
+												<td>Jonathan</td>
+												<td>Lollipop</td>
+												<td>$7.00</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<span class="semibold">Table Bordered</span>
+									<table class="bordered mb-4">
+										<thead>
+										  <tr>
+											  <th data-field="id">Name</th>
+											  <th data-field="name">Item Name</th>
+											  <th data-field="price">Item Price</th>
+										  </tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>Alvin</td>
+												<td>Eclair</td>
+												<td>$0.87</td>
+											</tr>
+											<tr>
+												<td>Alan</td>
+												<td>Jellybean</td>
+												<td>$3.76</td>
+											</tr>
+											<tr>
+												<td>Jonathan</td>
+												<td>Lollipop</td>
+												<td>$7.00</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<span class="semibold">Striped Table</span>
+									<table class="striped">
+										<thead>
+											<tr>
+												<th data-field="id">Name</th>
+												<th data-field="name">Item Name</th>
+												<th data-field="price">Item Price</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>Alvin</td>
+												<td>Eclair</td>
+												<td>$0.87</td>
+											</tr>
+											<tr>
+												<td>Alan</td>
+												<td>Jellybean</td>
+												<td>$3.76</td>
+											</tr>
+											<tr>
+												<td>Jonathan</td>
+												<td>Lollipop</td>
+												<td>$7.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+
+						</div><!-- .content-container -->
+						<!-- END CONTENT CONTAINER -->
+
+					</div><!-- .col s12 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

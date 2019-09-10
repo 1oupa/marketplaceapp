@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul>
+							<li><a href="index.html">Shop</a></li>
+							<li><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul>
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul>
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li class="active"><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul>
+							<li><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<div class="container">
+				<div class="row no-mb">
+					<div class="col s12">
+
+						<!-- Content container -->
+						<div class="content-container">
+
+							<!-- Page title -->
+							<div class="page-title animated fadeInRight">
+								Forms
+							</div><!-- .page-title -->
+
+							<div class="entry-content feature_forms animated fadeInUp">
+
+								<!-- Text inputs -->
+								<div class="home-widget" id="text-inputs">
+									<div class="widget-title">
+										Text inputs
+									</div>
+
+									<form>
+										<div class="row">
+											<div class="input-field col s6">
+												<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+												<label for="first_name">First Name</label>
+											</div>
+											<div class="input-field col s6">
+												<input id="last_name" type="text" class="validate">
+												<label for="last_name">Last Name</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="input-field col s12">
+												<input disabled value="I am not editable" id="disabled" type="text" class="validate no-mb">
+												<label for="disabled">Disabled</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="input-field col s12">
+												<input id="password" type="password" class="validate no-mb">
+												<label for="password">Password</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="input-field col s12 no-mb">
+												<input id="email" type="email" class="validate no-mb">
+												<label for="email">Email</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col s12">
+												Inline input:
+												<div class="input-field inline no-mb">
+													<input id="email_inline" type="email" class="validate">
+													<label for="email_inline">Email</label>
+													<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- End text inputs -->
+								
+								<!-- Icon prefixes -->
+								<div class="home-widget" id="icon-prefixes">
+									<div class="widget-title">
+										Icon prefixes
+									</div>
+
+									<div class="row">
+										<div class="input-field col s6 no-mb no-mt">
+											<i class="material-icons prefix">account_circle</i>
+											<input id="icon_prefix" type="text" class="validate no-mb">
+											<label for="icon_prefix">First Name</label>
+										</div>
+										<div class="input-field col s6 no-mb no-mt">
+											<i class="material-icons prefix">phone</i>
+											<input id="icon_telephone" type="tel" class="validate no-mb">
+											<label for="icon_telephone">Telephone</label>
+										</div>
+									</div>
+
+								</div>
+								<!-- End icon prefixes -->
+								
+								<!-- Textarea -->
+								<div class="home-widget" id="textarea">
+									<div class="widget-title">
+										Textarea
+									</div>
+
+									<div class="row">
+										<div class="input-field col s12 no-mb no-mt">
+											<textarea id="textarea1" class="materialize-textarea no-mb"></textarea>
+											<label for="textarea1">Textarea</label>
+										</div>
+									</div>
+
+								</div>
+								<!-- End textarea -->
+								
+								<!-- File input -->
+								<div class="home-widget" id="file-input">
+									<div class="widget-title">
+										File input
+									</div>
+
+									<form action="#">
+										<div class="file-field input-field">
+											<div class="btn">
+												<span>File</span>
+												<input type="file">
+											</div>
+											<div class="file-path-wrapper">
+												<input class="file-path validate" type="text">
+											</div>
+										</div>
+									</form>
+									
+									<p>You can also use the <code>multiple</code> attribute to allow multiple file uploads.</p>
+									
+									<form action="#">
+										<div class="file-field input-field">
+											<div class="btn">
+												<span>File</span>
+												<input type="file" multiple>
+											</div>
+											<div class="file-path-wrapper">
+												<input class="file-path validate" type="text" placeholder="Upload one or more files">
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- End file input -->
+								
+								<!-- Checkboxes -->
+								<div class="home-widget" id="checkboxes">
+									<div class="widget-title">
+										Checkboxes
+									</div>
+
+									<form action="#">
+										<div class="mb-2">
+											<label>
+												<input type="checkbox" />
+												<span>Red</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span>Yellow</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input type="checkbox" class="filled-in" checked="checked" />
+												<span>Filled in</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input id="indeterminate-checkbox" type="checkbox" />
+												<span>Indeterminate Style</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input type="checkbox" checked="checked" disabled="disabled" />
+												<span>Green</span>
+											</label>
+										</div>
+										<div>
+											<label>
+												<input type="checkbox" disabled="disabled" />
+												<span>Brown</span>
+											</label>
+										</div>
+									</form>
+								</div>
+								<!-- End checkboxes -->
+								
+								<!-- Radio -->
+								<div class="home-widget" id="radio">
+									<div class="widget-title">
+										Radio
+									</div>
+
+									<form action="#">
+										<div class="mb-2">
+											<label>
+												<input name="group1" type="radio" checked />
+												<span>Red</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input name="group1" type="radio" />
+												<span>Yellow</span>
+											</label>
+										</div>
+										<div class="mb-2">
+											<label>
+												<input class="with-gap" name="group1" type="radio"  />
+												<span>Green</span>
+											</label>
+										</div>
+										<div>
+											<label>
+												<input name="group1" type="radio" disabled="disabled" />
+												<span>Brown</span>
+											</label>
+										</div>
+									</form>
+
+								</div>
+								<!-- End radio -->
+								
+								<!-- Select -->
+								<div class="home-widget" id="select">
+									<div class="widget-title mb-4">
+										Select
+									</div>
+									<div class="input-field">
+										<select>
+											<option value="" disabled selected>Choose your option</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+										<label>Materialize Select</label>
+									</div>
+
+									<label>Browser Select</label>
+									<select class="browser-default">
+										<option value="" disabled selected>Choose your option</option>
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+										<option value="3">Option 3</option>
+									</select>
+
+								</div>
+								<!-- End select -->
+								
+								<!-- Switch -->
+								<div class="home-widget" id="switch">
+									<div class="widget-title">
+										Switch
+									</div>
+
+									<!-- Switch -->
+									<div class="switch mb-2">
+										<label>
+											Off
+											<input type="checkbox">
+											<span class="lever"></span>
+											On
+										</label>
+									</div>
+									
+									<!-- Disabled Switch -->
+									<div class="switch pb-1">
+										<label>
+											Off
+											<input disabled type="checkbox">
+											<span class="lever"></span>
+											On
+										</label>
+									</div>
+								</div>
+								<!-- End switch -->
+								
+								<!-- Range -->
+								<div class="home-widget" id="range">
+									<div class="widget-title">
+										Range
+									</div>
+									<form action="#">
+										<p class="range-field no-mb">
+											<input type="range" id="test5" min="0" max="100" class="no-mb" />
+										</p>
+									</form>
+								</div>
+								<!-- End range -->
+								
+								<!-- Pickers -->
+								<div class="home-widget no-mb" id="pickers">
+									<div class="widget-title">
+										Pickers
+									</div>
+									<div class="mb-2">
+										<input type="text" class="datepicker" placeholder="Date picker">
+									</div>
+									<div>
+										<input type="text" class="timepicker" placeholder="Time picker">
+									</div>
+								</div>
+								<!-- End pickers -->
+
+							</div>
+
+						</div><!-- .content-container -->
+
+					</div><!-- .col s12 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul>
+							<li><a href="index.html">Shop</a></li>
+							<li><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub active open"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul class="expand">
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li class="active"><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul>
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul>
+							<li><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<div class="content-container no-padding-top">
+
+				<!-- Title & meta -->
+				<div class="container animated fadeInRight">
+					<div class="row">
+						<div class="col s12">
+
+							<div class="blog-inside-header">
+								<div class="blog-header">
+									<div class="entry-cat">
+										<a href="#!">Tech</a>
+									</div>
+									<h2 class="entry-title">
+										Nulla aliquam tristique metus at sodales
+									</h2>
+									<div class="entry-meta">
+										<span class="meta">
+											<span class="icon ti-time"></span> Jan 12, 2018
+										</span>
+										<span class="meta">
+											<span class="icon ti-user"></span> admin
+										</span>
+									</div>
+								</div><!-- .blog-header -->
+							</div><!-- .blog-inside-header -->
+
+						</div><!-- .col s12 -->
+					</div><!-- .row -->
+
+				</div><!-- .container animated fadeInRight -->
+				<!-- End Title & meta -->
+
+				<!-- Gallery slider, content, comment -->
+				<div class="animated fadeInUp">
+
+					<!-- Gallery slider -->
+					<div class="thumb-gallery">
+						<div class="item">
+							<img src="assets/images/no-image_cyan.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="assets/images/no-image_grey.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="assets/images/no-image_orange.jpg" alt="">
+						</div>
+					</div>
+					<!-- End Gallery slider -->
+
+					<div class="container">
+						<div class="row no-mb">
+							<div class="col s12">
+
+								<div class="blog">
+
+									<!-- Entry content -->
+									<div class="entry-content">
+										<p>Cras mollis eros ac magna scelerisque consectetur. Aliquam quis tempor turpis. Phasellus gravida sem lectus, id elementum metus lobortis eu.</p>
+										
+										<p>Vestibulum venenatis nec ex vel porttitor. Vivamus condimentum hendrerit velit, eu tempus massa. Quisque id nisi id metus sagittis rhoncus. Ut dui leo, iaculis sit amet efficitur vel, aliquet vel sapien. Curabitur facilisis odio eget dolor suscipit, in mollis ipsum blandit. Curabitur pharetra imperdiet lorem at facilisis.</p>
+
+										<blockquote>
+											Donec malesuada consequat lectus, accumsan congue nibh pretium in. In sit amet.
+										</blockquote>
+										
+										<p>Maecenas consectetur, ante ultricies gravida blandit, purus velit consequat enim, in facilisis orci risus id quam. Donec malesuada consequat lectus, accumsan congue nibh pretium in. In sit amet lectus metus.</p>
+										
+										<p>Quisque ac pretium risus, vel eleifend nisl. Donec feugiat pretium mi vel semper. Nam semper ligula quis eros rutrum, non vestibulum sapien euismod. Nullam sit amet ultrices ex, vitae mollis eros. Proin iaculis, diam et consequat finibus, magna metus tempus sem, eget commodo magna ante sit amet justo.</p>
+									</div><!-- .entry-content -->
+
+									<!-- Entry footer -->
+									<div class="entry-footer">
+										<div class="tags">
+											<span class="caption">Tags</span>
+											<a href="#!">kaylilla</a>
+											<a href="#!">mobile</a>
+											<a href="#!">blog</a>
+											<a href="#!">story</a>
+										</div>
+										<div class="share">
+											<span class="caption">Share</span>
+											<a class="facebook" href="#!"><i class="icon fa fa-facebook"></i> Share</a>
+											<a class="twitter" href="#!"><i class="icon fa fa-twitter"></i> Tweet</a>
+											<a class="linkedin" href="#!"><i class="icon fa fa-linkedin"></i> Share</a>
+										</div>
+									</div><!-- .entry-footer -->
+
+									<!-- Blog author -->
+									<div class="blog-author">
+										<div class="avatar">
+											<img src="assets/images/no-img.jpg" alt="">
+										</div>
+										<div class="author-ctn">
+											<h4 class="author-name">admin</h4>
+											<p class="desc">Sed ac dui in lacus scelerisque hendrerit ut vitae ligula</p>
+										</div>
+									</div><!-- .blog-author -->
+
+									<!-- Comment form -->
+									<div class="comment-form">
+										<h3 class="widget-title no-mb">Leave a comment</h3>
+										<form>
+											<input type="text" name="name" placeholder="Name">
+											<input type="email" name="email" placeholder="Email">
+											<textarea name="message" class="materialize-textarea" placeholder="Message" cols="40" rows="4"></textarea>
+											<button type="button" class="btn" name="button">Send</button>
+										</form>
+									</div><!-- .comment-form -->
+
+									<!-- Comment list -->
+									<div class="comments no-mb">
+										<h3 class="widget-title">Comment</h3>
+
+										<ol class="comment-list">
+											<li class="has_child no-padding-top"><!-- Use class "has_child" for make child in the item -->
+												<div class="user-pic">
+													<img src="assets/images/no-img.jpg" alt="">
+												</div>
+												<div class="comment-content">
+													<h3 class="user-name">Joe Marley</h3>
+													<div class="comment-meta">
+														14 Oct 2018, 19:55
+													</div>
+													<p>The incradible of literature is common nor in the clausul</p>
+												</div>
+
+												<ol class="comment-list_child">
+													<li>
+														<div class="user-pic">
+															<img src="assets/images/no-img.jpg" alt="">
+														</div>
+														<div class="comment-content">
+															<h3 class="user-name">Natalie Amalya</h3>
+															<div class="comment-meta">
+																20 Oct 2018, 20:00
+															</div>
+															<p>Yes, of course</p>
+														</div>
+													</li>
+													<li>
+														<div class="user-pic">
+															<img src="assets/images/no-img.jpg" alt="">
+														</div>
+														<div class="comment-content">
+															<h3 class="user-name">Joe Marley</h3>
+															<div class="comment-meta">
+																20 Oct 2018, 02:25
+															</div>
+															<p>Thank you</p>
+														</div>
+													</li>
+												</ol>
+
+											</li>
+											<li>
+												<div class="user-pic">
+													<img src="assets/images/no-img.jpg" alt="">
+												</div>
+												<div class="comment-content">
+													<h3 class="user-name">Michelle Chan</h3>
+													<div class="comment-meta">
+														16 Oct 2018, 18:12
+													</div>
+													<p>Awesome...</p>
+												</div>
+											</li>
+										</ol><!-- .comment-list -->
+
+									</div><!-- .comments -->
+
+								</div><!-- .blog -->
+
+							</div><!-- .col s12 -->
+						</div><!-- .row -->
+					</div><!-- .container -->
+
+				</div><!-- .animated fadeInUp -->
+				<!-- End Thumbnail, content, comment -->
+
+			</div><!-- .content-container -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

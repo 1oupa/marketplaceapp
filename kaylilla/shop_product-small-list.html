@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul>
+							<li><a href="index.html">Shop</a></li>
+							<li><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul>
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub active open"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul class="expand">
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li class="active"><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul>
+							<li><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<div class="container">
+				<div class="row no-mb">
+					<div class="col s12">
+
+						<!-- Content container -->
+						<div class="content-container">
+
+							<!-- Page title -->
+							<div class="page-title animated fadeInRight">
+								Product small list
+							</div><!-- .page-title -->
+							
+							<!-- Product Small List -->
+							<ul class="product-small-list animated fadeInUp">
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_orange.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Tablet Mini 2
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="product-price-before">$ 499.00</span>
+											<span class="price-current">$ 472.5</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_grey.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Woman pants
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="product-price-before">$ 68.00</span>
+											<span class="price-current">$ 62.22</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_black.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Modern Watch
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+										</div>
+										<div class="product-price">
+											<span class="price-current">$ 260.9</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_cyan.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Camping tent
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="price-current">$ 102.8</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_grey.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Purple eyeglass
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="price-current">$ 42.99</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_orange.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Black blazer
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="product-price-before">$ 178.23</span>
+											<span class="price-current">$ 159.00</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_black.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Hairbands
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="product-price-before">$ 20.00</span>
+											<span class="price-current">$ 18.5</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+								<li class="valign-wrapper">
+									<div class="entry-thumb">
+										<a href="#!">
+											<img src="assets/images/no-product-img_cyan.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-ctn">
+										<div class="product-name">
+											<a href="#!">
+												Motorcycle 200cc
+											</a>
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star active"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-price">
+											<span class="product-price-before">$ 1,021.33</span>
+											<span class="price-current">$ 965.12</span>
+										</div>
+										<div class="mt-3">
+											<a class="btn" href="#!">Buy</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- End Product Small List -->
+
+							<!-- Pagination -->
+							<!-- You can also use another pagination style like
+							page number pagination. See another page to view the example
+							-->
+							<a class="load-more" href="#!">Load more</a>
+
+						</div><!-- .content-container -->
+						<!-- END CONTENT CONTAINER -->
+
+					</div><!-- .col s12 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

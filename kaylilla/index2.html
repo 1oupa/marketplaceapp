@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Kaylilla - Clean & Minimalist Mobile Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="main">
+
+		<!-- LEFT SIDEBAR -->
+		<div id="slide-out-left" class="sidenav">
+
+			<!-- Sidebar profile -->
+			<div class="top-left-nav">
+				<div class="profile-cover">
+					<img src="assets/images/no-image_orange.jpg" alt="">
+				</div>
+				<div class="profile-caption">
+					<div class="pic-thumb">
+						<img src="assets/images/no-img.jpg" alt="">
+					</div><!-- .pic-thumb -->
+
+					<a href="#" class="dropdown-trigger" data-target="sidedropdown">
+						<span class="profile-name">John Doe</span>
+						<span class="desc">@johndoe</span>
+						<span class="icon"><span class="ti-angle-down"></span></span>
+					</a>
+					<ul id="sidedropdown" class="dropdown-content">
+						<li><a href="#!"><i class="material-icons">mail_outline</i> Inbox</a></li>
+						<li><a href="#!"><i class="material-icons">star_border</i> Starred</a></li>
+						<li><a href="#!"><i class="material-icons">history</i> History</a></li>
+						<li class="divider"></li>
+						<li><a href="#!"><i class="material-icons">exit_to_app</i> Signout</a></li>
+					</ul><!-- .dropdown-content -->
+				</div>
+			</div><!-- .top-left-nav -->
+			
+			<!-- App/Site Menu -->
+			<div id="main-menu">
+				<ul>
+					<li class="has-sub active open"><a href="#"><span class="icon ti-home cyan"></span> Home</a>
+						<ul class="expand">
+							<li><a href="index.html">Shop</a></li>
+							<li class="active"><a href="index2.html">Plain</a></li>
+							<li><a href="index3.html">Account</a></li>
+							<li><a href="index4.html">News</a></li>
+						</ul>
+					</li>
+					<li class="header">Templates</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-files orange"></span> Blog</a>
+						<ul>
+							<li><a href="blog_list.html">Blog List</a></li>
+							<li><a href="blog_small-list.html">Blog small list</a></li>
+							<li><a href="blog_inside.html">Blog Inside</a></li>
+							<li><a href="blog_inside-gallery.html">Gallery post</a></li>
+							<li><a href="blog_inside-video.html">Video post</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-shopping-cart blue"></span> Shop</a>
+						<ul>
+							<li><a href="shop_product-list.html">Product list</a></li>
+							<li><a href="shop_product-small-list.html">Product small list</a></li>
+							<li><a href="shop_inside.html">Product Inside</a></li>
+							<li><a href="shop_cart.html">Cart</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-file red"></span> Pages</a>
+						<ul>
+							<li><a href="page_404.html">404</a></li>
+							<li><a href="page_contact.html">Contact</a></li>
+							<li><a href="page_faq.html">FAQ</a></li>
+							<li><a href="page_portfolio.html">Portfolio</a></li>
+							<li><a href="page_search-result.html">Search result</a></li>
+							<li><a href="page_standard.html">Standard Page</a></li>
+						</ul>
+					</li>
+					<li class="has-sub"><a href="#"><span class="icon ti-mobile lime"></span> Apps</a>
+						<ul>
+							<li><a href="app_login.html">Login</a></li>
+							<li><a href="app_signup.html">Signup</a></li>
+							<li><a href="app_page-tabs.html">Page tabs</a></li>
+							<li><a href="app_calendar.html">Calendar</a></li>
+							<li><a href="app_chat.html">Chat</a></li>
+						</ul>
+					</li>
+					<li class="header">Features</li>
+					<li><a href="feature_forms.html"><span class="icon ti-pencil-alt amber"></span> Forms</a></li>
+					<li><a href="feature_components.html"><span class="icon ti-bag purple"></span> Components</a></li>
+					<li class="has-sub"><a href="#"><span class="icon ti-bag green"></span> Misc</a>
+						<ul>
+							<li><a href="misc_styling-guide.html">Styling guide</a></li>
+							<li><a href="misc_helpers.html">Helpers</a></li>
+							<li><a href="misc_icons.html">Icons</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End Site/App Menu -->
+
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+
+		<!-- MAIN PAGE -->
+		<!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+		Put this class to make navbar fixed or remove this.
+		-->
+		<div id="page" class="fixed-navbar">
+
+			<!-- FIXED Top Navbar -->
+			<div class="top-navbar">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+				
+							<div class="front-navigation">
+								<div class="top-navbar-left">
+									<a href="#" data-target="slide-out-left" class="sidenav-trigger">
+										<span class="ti-menu"></span>
+									</a>
+								</div>
+								<div class="top-navbar-right">
+									
+									<a href="#!" class="show-search">
+										<span class="ti-search"></span>
+									</a>
+								</div>
+								<div class="site-title">
+									<h1><span>kay</span>lilla</h1>
+								</div>
+							</div>
+
+							<div class="searchbar">
+								<div class="input-field">
+									<input placeholder="Search..." id="first_name" type="text" class="validate">
+								</div>
+								<div class="search-close">
+									<span class="ti-close"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FIXED Top Navbar -->
+
+			<!-- CONTENT CONTAINER -->
+			<div class="content-container no-padding-top">
+							
+				<div class="animated fadeInRight">
+
+					<div class="home-widget">
+						
+						<!-- Slider -->
+						<div class="home-slider flat">
+							<div class="item cyan"><!-- Item #1 -->
+								<div class="post-caption">
+									
+									<div class="container">
+										<div class="row">
+											<div class="col s12">
+												<h4 class="title">
+													<span class="font-weight-bold">Minimalist</span> concept
+												</h4>
+												<p class="desc">Curabitur facilisis odio eget dolor suscipit, in mollis ipsum blandit. Curabitur pharetra</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="item orange"><!-- Item #2 -->
+								<div class="post-caption center-align">
+											
+									<div class="container">
+										<div class="row">
+											<div class="col s12">
+												<h4 class="title">
+													<span class="font-weight-bold">Clean</span> design
+												</h4>
+												<p class="desc">Quisque id nisi id metus sagittis rhoncus eget dolor suscipit gravida blandit</p>
+											</div>
+										</div>
+									</div>
+
+								</div>							
+							</div>
+							<div class="item brown"><!-- Item #3 -->
+								<div class="post-caption right-align">
+											
+									<div class="container">
+										<div class="row">
+											<div class="col s12">
+												<h4 class="title">
+													<span class="font-weight-bold">Multipurpose</span> template
+												</h4>
+												<p class="desc">Maecenas consectetur, ante ultricies gravida blandit, purus velit consequat enim</p>
+											</div>
+										</div>
+									</div>
+
+								</div>							
+							</div>
+						</div><!-- .home-slider -->
+						<!-- End slider -->
+
+					</div><!-- .home-widget -->
+
+				</div><!-- .animated fadeInRight -->
+
+
+				<div class="container">
+					<div class="row no-mb">
+						<div class="col s12">
+
+							<div class="animated fadeInUp">
+
+								<!-- Advantages -->
+								<div class="home-widget">
+									<div class="advantages row">
+										<div class="col s6 xl3">
+											<div class="icon lime-text">
+												<span class="ti-layout-width-default-alt"></span>
+											</div>
+											<h4 class="title">
+												Minimalist
+											</h4>
+											<p class="desc">Vestibulum venenatis nec ex vel porttitor</p>
+										</div>
+										<div class="col s6 xl3">
+											<div class="icon orange-text">
+												<span class="ti-mobile"></span>
+											</div>
+											<h4 class="title">
+												Clean
+											</h4>
+											<p class="desc">Maecenas consectetur ante sit amet efficitur</p>
+										</div>
+										<div class="col s6 xl3">
+											<div class="icon cyan-text">
+												<span class="ti-star"></span>
+											</div>
+											<h4 class="title">
+												Fresh look
+											</h4>
+											<p class="desc">Quisque id nisi id metus sagittis rhoncus</p>
+										</div>
+										<div class="col s6 xl3">
+											<div class="icon indigo-text">
+												<span class="ti-palette"></span>
+											</div>
+											<h4 class="title">
+												Colorful
+											</h4>
+											<p class="desc">Curabitur imperdiet lorem at facilisis</p>
+										</div>
+									</div>
+								</div>
+								<!-- End Advantages -->
+
+								<!-- Icon shortcut -->
+								<div class="home-widget">
+									<div class="widget-title">
+										Shortcut
+									</div>
+
+									<div class="home-icon-filters">
+									
+										<ul class="tabs shortcut-filter"><!-- Tabs navigation -->
+											<li class="tab filter-btn" data-filter="all"><a class="active" href="#one">All</a></li>
+											<li class="tab filter-btn" data-filter=".blog"><a href="#blog">Blog</a></li>
+											<li class="tab filter-btn" data-filter=".shop"><a href="#shop">Shop</a></li>
+											<li class="tab filter-btn" data-filter=".pages"><a href="#pages">Pages</a></li>
+											<li class="tab filter-btn" data-filter=".app"><a href="#app">App</a></li>
+										</ul><!-- End Tabs navigation -->
+												
+										<!-- Gallery image lists -->
+										<div id="mix-wrapper">
+											<a href="blog_list.html" class="mix-target blog">
+												<div class="icon-shortcut lime">
+													<div class="icon">
+														<span class="ti-layout-list-post"></span>
+													</div>
+													<span class="caption truncate">Blog list</span>
+												</div>
+											</a>
+											<a href="shop_cart.html" class="mix-target shop">
+												<div class="icon-shortcut cyan">
+													<div class="icon">
+														<span class="ti-shopping-cart"></span>
+													</div>
+													<span class="caption truncate">Cart</span>
+												</div>
+											</a>
+											<a href="page_standard.html" class="mix-target pages">
+												<div class="icon-shortcut red">
+													<div class="icon">
+														<span class="ti-file"></span>
+													</div>
+													<span class="caption truncate">Standard page</span>
+												</div>
+											</a>
+											<a href="blog_inside.html" class="mix-target blog">
+												<div class="icon-shortcut blue">
+													<div class="icon">
+														<span class="ti-layout-media-overlay"></span>
+													</div>
+													<span class="caption truncate">Blog inside</span>
+												</div>
+											</a>
+											<a href="page_404.html" class="mix-target pages">
+												<div class="icon-shortcut green">
+													<div class="icon">
+														<span class="ti-na"></span>
+													</div>
+													<span class="caption truncate">404</span>
+												</div>
+											</a>
+											<a href="shop_product-list.html" class="mix-target shop">
+												<div class="icon-shortcut indigo">
+													<div class="icon">
+														<span class="ti-layout-grid2-alt"></span>
+													</div>
+													<span class="caption truncate">Product list</span>
+												</div>
+											</a>
+											<a href="app_signup.html" class="mix-target app">
+												<div class="icon-shortcut brown lighten-2">
+													<div class="icon">
+														<span class="ti-pencil-alt"></span>
+													</div>
+													<span class="caption truncate">Signup</span>
+												</div>
+											</a>
+											<a href="blog_inside-gallery.html" class="mix-target blog">
+												<div class="icon-shortcut purple">
+													<div class="icon">
+														<span class="ti-gallery"></span>
+													</div>
+													<span class="caption truncate">Gallery post</span>
+												</div>
+											</a>
+											<a href="app_calendar.html" class="mix-target app">
+												<div class="icon-shortcut pink">
+													<div class="icon">
+														<span class="ti-calendar"></span>
+													</div>
+													<span class="caption truncate">Calendar</span>
+												</div>
+											</a>
+											<a href="page_faq.html" class="mix-target pages">
+												<div class="icon-shortcut lime lighten-1">
+													<div class="icon">
+														<span class="ti-help"></span>
+													</div>
+													<span class="caption truncate">FAQ</span>
+												</div>
+											</a>
+											<a href="app_chat.html" class="mix-target app">
+												<div class="icon-shortcut purple">
+													<div class="icon">
+														<span class="ti-comments"></span>
+													</div>
+													<span class="caption truncate">Chat</span>
+												</div>
+											</a>
+											<a href="shop_inside.html" class="mix-target shop">
+												<div class="icon-shortcut light-green">
+													<div class="icon">
+														<span class="ti-layout-media-overlay"></span>
+													</div>
+													<span class="caption truncate">Product inside</span>
+												</div>
+											</a>
+											<a href="blog_inside-video.html" class="mix-target blog">
+												<div class="icon-shortcut teal">
+													<div class="icon">
+														<span class="ti-control-play"></span>
+													</div>
+													<span class="caption truncate">Video post</span>
+												</div>
+											</a>
+											<a href="page_search-result.html" class="mix-target pages">
+												<div class="icon-shortcut blue lighten-3">
+													<div class="icon">
+														<span class="ti-search"></span>
+													</div>
+													<span class="caption truncate">Search result</span>
+												</div>
+											</a>
+											<a href="shop_product-small-list.html" class="mix-target shop">
+												<div class="icon-shortcut amber">
+													<div class="icon">
+														<span class="ti-layout-media-left"></span>
+													</div>
+													<span class="caption truncate">Product small list</span>
+												</div>
+											</a>
+										</div>
+										<!-- End Gallery image lists -->
+
+										<div class="clear"></div>
+
+									</div>
+
+								</div>
+								<!-- End Icon shortcut -->
+
+								<!-- FAQ -->
+								<div class="home-widget no-mb">
+									<div class="widget-title">
+										FAQ
+									</div>
+
+									<div class="faq">
+
+										<!-- FAQ Lists -->
+										<ul class="collapsible" data-collapsible="accordion">
+											<li class="active">
+												<div class="icon no-mt">
+													<span class="ti-mobile"></span>
+												</div>
+												<div class="collapsible-header no-padding-top">What is the Kaylilla template? <span class="fa fa-angle-right"></span></div>
+												<div class="collapsible-body">
+													<p>A template dedicated for mobile interface that having clean & minimalist concept.</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<span class="ti-bolt"></span>
+												</div>
+												<div class="collapsible-header">What the excellences of this template? <span class="fa fa-angle-right"></span></div>
+												<div class="collapsible-body">
+													<p>The first impression of this template is minimalist and clean. With those two main features, hopefully performance of this template will improved.</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<span class="ti-thumb-up"></span>
+												</div>
+												<div class="collapsible-header">How much this template? <span class="fa fa-angle-right"></span></div>
+												<div class="collapsible-body">
+													<p>You can check on themeforest.</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<span class="ti-clipboard"></span>
+												</div>
+												<div class="collapsible-header">Why this template goods for me? <span class="fa fa-angle-right"></span></div>
+												<div class="collapsible-body">
+													<p>Because multipurpose template, you must try.</p>
+												</div>
+											</li>
+										</ul>
+										<!-- End FAQ Lists -->
+
+									</div>
+
+								</div>
+								<!-- End FAQ -->
+
+							</div>
+
+						</div><!-- .col s12 -->
+					</div><!-- .row -->
+				</div><!-- .container -->
+
+			</div><!-- .content-container -->
+			<!-- END CONTENT CONTAINER -->
+
+		
+			<!-- FOOTER -->
+			<div class="footer">
+				
+				<!-- Footer header -->
+				<div class="ft-header">
+					<h2 class="title"><span>kay</span>lilla</h2>
+					<p class="desc">clean minimalist mobile template</p>
+					<!-- Social media -->
+					<div class="socmed mt-3">
+						<a href="#!"><i class="fa fa-facebook"></i></a>
+						<a href="#!"><i class="fa fa-twitter"></i></a>
+						<a href="#!"><i class="fa fa-google-plus"></i></a>
+						<a href="#!"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<span>&copy; 2018 kaylilla mobile</span>
+					<!-- footer menu -->
+					<div class="ft-menu">
+						<a href="#!">Terms</a>
+						<a href="#!">Privacy policy</a>
+						<a href="#!">Disclaimer</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End FOOTER -->
+
+			<!-- Back to top Link -->
+			<div id="to-top" class="main-bg">
+				<span class="ti-arrow-up"></span>
+			</div> 
+
+		</div>
+		<!-- END MAIN PAGE -->
+
+	</div><!-- #main -->
+
+	<script src="assets/plugins/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/materialize/js/materialize.min.js"></script>
+	<script src="assets/plugins/slick/js/slick.min.js"></script>
+	<script src="assets/plugins/swipebox/js/jquery.swipebox.js"></script>
+	<script src="assets/plugins/MixItUp/jquery.mixitup.min.js"></script>
+	<script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
